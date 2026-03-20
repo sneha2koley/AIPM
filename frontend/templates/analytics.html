@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% set active_page = "analytics" %}
+{% block title %}Analytics{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h2>Analytics Dashboard</h2>
+    <p>Notification engagement tracking and team health monitoring</p>
+</div>
+
+<div class="metrics-grid" id="analyticsMetrics">
+    <div class="metric-card">
+        <div class="label">Overall CTR</div>
+        <div class="value" id="a-ctr">—</div>
+        <div class="change negative">target: 15%</div>
+    </div>
+    <div class="metric-card">
+        <div class="label">Read Rate</div>
+        <div class="value" id="a-read">—</div>
+    </div>
+    <div class="metric-card">
+        <div class="label">Dashboard Views</div>
+        <div class="value" id="a-views">—</div>
+    </div>
+    <div class="metric-card">
+        <div class="label">High-Risk Teams</div>
+        <div class="value" id="a-risk">—</div>
+    </div>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    <div class="card">
+        <div class="card-header"><h3>CTR by Priority Tier</h3></div>
+        <div class="card-body">
+            <div class="bar-chart" id="ctrByPriority"></div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header"><h3>CTR by Notification Type</h3></div>
+        <div class="card-body">
+            <div class="bar-chart" id="ctrByType"></div>
+        </div>
+    </div>
+</div>
+
+<div class="card" style="margin-top: 20px;">
+    <div class="card-header"><h3>Team Health Leaderboard</h3></div>
+    <div class="card-body" style="padding: 0;">
+        <table class="data-table" id="teamTable">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Members</th>
+                    <th>Activation</th>
+                    <th>CTR</th>
+                    <th>Notifications</th>
+                    <th>Churn Risk</th>
+                </tr>
+            </thead>
+            <tbody id="teamTableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<div class="card" style="margin-top: 20px;">
+    <div class="card-header"><h3>Impact Projection</h3></div>
+    <div class="card-body">
+        <div class="bar-chart" id="impactChart"></div>
+        <div style="margin-top: 16px; padding: 16px; background: var(--bg-secondary); border-radius: var(--radius); font-size: 13px; color: var(--text-secondary); line-height: 1.8;">
+            <strong style="color: var(--text-primary)">Expected Impact (from PM Pipeline):</strong><br>
+            CTR improvement: 6% &rarr; 10% (+67%)<br>
+            90-day churn reduction: 22% &rarr; 18% (-4pts)<br>
+            DAU/MAU recovery: 38% &rarr; 41%<br>
+            Estimated ARR saved: ~$145K/year
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function loadAnalytics() {
+    const [notifs, teams, adoption] = await Promise.all([
+        fetch('/api/analytics/notifications').then(r => r.json()),
+        fetch('/api/analytics/teams').then(r => r.json()),
+        fetch('/api/analytics/dashboard-adoption').then(r => r.json()),
+    ]);
+
+    document.getElementById('a-ctr').textContent = notifs.overall.ctr + '%';
+    document.getElementById('a-read').textContent = notifs.overall.read_rate + '%';
+    document.getElementById('a-views').textContent = (adoption.total_views || 0).toLocaleString();
+    document.getElementById('a-risk').textContent = teams.churn_distribution.high;
+
+    const priColors = {critical: 'var(--critical)', standard: 'var(--standard)', low: 'var(--low)'};
+    document.getElementById('ctrByPriority').innerHTML = notifs.by_priority.map(p => `
+        <div class="bar-row">
+            <div class="bar-label">${p.priority}</div>
+            <div class="bar-track"><div class="bar-fill" style="width: ${Math.min(p.ctr * 6, 100)}%; background: ${priColors[p.priority]}"></div></div>
+            <div class="bar-value">${p.ctr}%</div>
+        </div>
+    `).join('');
+
+    const maxTypeCtr = Math.max(...notifs.by_type.map(t => t.ctr), 1);
+    document.getElementById('ctrByType').innerHTML = notifs.by_type.slice(0, 8).map(t => `
+        <div class="bar-row">
+            <div class="bar-label">${t.notification_type || 'other'}</div>
+            <div class="bar-track"><div class="bar-fill" style="width: ${t.ctr / maxTypeCtr * 100}%; background: var(--accent)"></div></div>
+            <div class="bar-value">${t.ctr}%</div>
+        </div>
+    `).join('');
+
+    const riskColors = {low: 'var(--success)', medium: 'var(--warning)', high: 'var(--danger)'};
+    const sorted = teams.teams.sort((a, b) => b.activation_rate - a.activation_rate);
+    document.getElementById('teamTableBody').innerHTML = sorted.slice(0, 30).map(t => `
+        <tr>
+            <td><strong>${t.name}</strong></td>
+            <td>${t.members}</td>
+            <td>${t.activation_rate}%</td>
+            <td>${t.ctr}%</td>
+            <td>${(t.total_notifs || 0).toLocaleString()}</td>
+            <td><span class="badge" style="background: ${riskColors[t.churn_risk]}22; color: ${riskColors[t.churn_risk]}">${t.churn_risk}</span></td>
+        </tr>
+    `).join('');
+
+    document.getElementById('impactChart').innerHTML = `
+        <div class="bar-row">
+            <div class="bar-label">Current CTR</div>
+            <div class="bar-track"><div class="bar-fill" style="width: ${notifs.overall.ctr / 15 * 100}%; background: var(--danger)"></div></div>
+            <div class="bar-value">${notifs.overall.ctr}%</div>
+        </div>
+        <div class="bar-row">
+            <div class="bar-label">Expected CTR</div>
+            <div class="bar-track"><div class="bar-fill" style="width: ${10 / 15 * 100}%; background: var(--standard)"></div></div>
+            <div class="bar-value">10%</div>
+        </div>
+        <div class="bar-row">
+            <div class="bar-label">Best Case CTR</div>
+            <div class="bar-track"><div class="bar-fill" style="width: ${14 / 15 * 100}%; background: var(--success)"></div></div>
+            <div class="bar-value">14%</div>
+        </div>
+        <div class="bar-row">
+            <div class="bar-label">Industry Avg</div>
+            <div class="bar-track"><div class="bar-fill" style="width: 100%; background: var(--accent)"></div></div>
+            <div class="bar-value">15%</div>
+        </div>
+    `;
+}
+
+loadAnalytics();
+</script>
+{% endblock %}

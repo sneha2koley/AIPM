@@ -1,0 +1,7183 @@
+{
+  "distributions": {
+    "sender_volume": "power-law: p50=3, p75=7, p90=24, p95=58, p99=325",
+    "contacts_per_user": "power-law: p50=3, p75=11, p90=41",
+    "thread_depth": "85.8% single, 12.2% 2-3, 1.3% 4-5, 0.5% 6-10, 0.2% 11+",
+    "subject_types": "51.6% other, 30.8% reply, 7.1% forward, 4% status, 3.1% meeting, 0.3% urgent",
+    "time_pattern": "peak 6-9 AM CST, drops after 5 PM; Mon-Fri heavy",
+    "body_length": "p50=714 chars, p75=1613, p90=3299",
+    "reciprocity": "highly asymmetric, median pair ~0.1"
+  },
+  "teams": [
+    {
+      "index": 0,
+      "members": 12,
+      "density": 632.2,
+      "agents": [
+        "jeff.dasovich@enron.com",
+        "susan.mara@enron.com",
+        "james.steffes@enron.com",
+        "richard.shapiro@enron.com",
+        "karen.denne@enron.com",
+        "paul.kaufman@enron.com",
+        "skean@enron.com",
+        "sandra.mccubbin@enron.com",
+        "harry.kingerski@enron.com",
+        "alan.comnes@enron.com",
+        "mpalmer@enron.com",
+        "james.wright@enron.com",
+        "alex.turner@enron.com",
+        "morgan.blake@enron.com",
+        "casey.jordan@enron.com",
+        "riley.mitchell@enron.com",
+        "jamie.crawford@enron.com",
+        "taylor.ross@enron.com",
+        "quinn.foster@enron.com",
+        "avery.chen@enron.com",
+        "drew.patterson@enron.com",
+        "jordan.kelly@enron.com",
+        "sam.nguyen@enron.com",
+        "pat.sullivan@enron.com"
+      ]
+    },
+    {
+      "index": 1,
+      "members": 12,
+      "density": 166.1,
+      "agents": [
+        "veronica.espinoza@enron.com",
+        "recipients@enron.com",
+        "bob.bowen@enron.com",
+        "debra.perlingiere@enron.com",
+        "tana.jones@enron.com",
+        "andrea.ring@enron.com",
+        "gerald.nemec@enron.com",
+        "linda.ewing@enron.com",
+        "david.fairley@enron.com",
+        "sara.shackleton@enron.com",
+        "christian.yoder@enron.com",
+        "brad.coleman@enron.com",
+        "robin.garcia@enron.com",
+        "lee.thompson@enron.com"
+      ]
+    },
+    {
+      "index": 2,
+      "members": 12,
+      "density": 116.1,
+      "agents": [
+        "rhonda.denton@enron.com",
+        "kate.symes@enron.com",
+        "mark.guzman@enron.com",
+        "veronica.gonzalez@enron.com",
+        "lisa.lees@enron.com",
+        "genia.fitzgerald@enron.com",
+        "melissa.murphy@enron.com",
+        "tracy.ngo@enron.com",
+        "edward.sacks@enron.com",
+        "russell.diamond@enron.com",
+        "david.portz@enron.com",
+        "leslie.hansen@enron.com",
+        "chris.murphy@enron.com",
+        "devon.hart@enron.com",
+        "cameron.price@enron.com",
+        "dakota.wells@enron.com",
+        "reese.cooper@enron.com",
+        "skyler.ward@enron.com",
+        "finley.brooks@enron.com",
+        "emerson.cole@enron.com",
+        "hayden.reed@enron.com"
+      ]
+    },
+    {
+      "index": 3,
+      "members": 12,
+      "density": 95.9,
+      "agents": [
+        "cheryl.johnson@enron.com",
+        "stephanie.panus@enron.com",
+        "kori.loibl@enron.com",
+        "brant.reves@enron.com",
+        "stacey.richardson@enron.com",
+        "bernice.rodriguez@enron.com",
+        "david.hardy@enron.com",
+        "marilyn.colbert@enron.com",
+        "laurel.adams@enron.com",
+        "cyndie.balfour-flanagan@enron.com",
+        "anthony.campos@enron.com",
+        "mike.croucher@enron.com",
+        "parker.long@enron.com",
+        "rowan.gray@enron.com",
+        "sage.ellis@enron.com",
+        "blair.kim@enron.com",
+        "kendall.fox@enron.com",
+        "phoenix.ray@enron.com",
+        "river.stone@enron.com",
+        "lane.cross@enron.com",
+        "eden.vale@enron.com",
+        "wren.marsh@enron.com"
+      ]
+    },
+    {
+      "index": 4,
+      "members": 12,
+      "density": 106.5,
+      "agents": [
+        "jae.black@enron.com",
+        "m..presto@enron.com",
+        "don.baughman@enron.com",
+        "j..sturm@enron.com",
+        "mike.carson@enron.com",
+        "doug.gilbert-smith@enron.com",
+        "dana.davis@enron.com",
+        "maria.valdes@enron.com",
+        "russell.ballato@enron.com",
+        "d..thomas@enron.com",
+        "robert.benson@enron.com",
+        "corry.bentley@enron.com",
+        "ash.palmer@enron.com",
+        "scout.day@enron.com"
+      ]
+    },
+    {
+      "index": 5,
+      "members": 12,
+      "density": 118.4,
+      "agents": [
+        "ginger.dernehl@enron.com",
+        "linda.robertson@enron.com",
+        "elizabeth.linnell@enron.com",
+        "sue.nord@enron.com",
+        "sarah.novosel@enron.com",
+        "maureen.mcvicker@enron.com",
+        "janine.migden@enron.com",
+        "steve.montovano@enron.com",
+        "daniel.allegretti@enron.com",
+        "howard.fromer@enron.com",
+        "robert.hemstock@enron.com",
+        "lisa.yoho@enron.com",
+        "shay.north@enron.com",
+        "bay.collins@enron.com"
+      ]
+    },
+    {
+      "index": 6,
+      "members": 12,
+      "density": 173.8,
+      "agents": [
+        "lorna.brennan@enron.com",
+        "lorraine.lindberg@enron.com",
+        "tk.lohman@enron.com",
+        "lindy.donoho@enron.com",
+        "kevin.hyatt@enron.com",
+        "michelle.lokay@enron.com",
+        "steven.harris@enron.com",
+        "jeffery.fawcett@enron.com",
+        "kimberly.watson@enron.com",
+        "john.dushinske@enron.com",
+        "jo.williams@enron.com",
+        "dave.neubauer@enron.com",
+        "zion.fields@enron.com"
+      ]
+    },
+    {
+      "index": 7,
+      "members": 12,
+      "density": 86.0,
+      "agents": [
+        "david.forster@enron.com",
+        "mark.taylor@enron.com",
+        "louise.kitchen@enron.com",
+        "john.lavorato@enron.com",
+        "carol.clair@enron.com",
+        "andy.zipper@enron.com",
+        "justin.rostant@enron.com",
+        "adam.johnson@enron.com",
+        "simone.rose@enron.com",
+        "greg.whalley@enron.com",
+        "john.arnold@enron.com",
+        "bob.shults@enron.com",
+        "lark.shore@enron.com",
+        "cedar.west@enron.com",
+        "dale.frost@enron.com"
+      ]
+    },
+    {
+      "index": 8,
+      "members": 12,
+      "density": 35.7,
+      "agents": [
+        "l..denton@enron.com",
+        "w..white@enron.com",
+        "casey.evans@enron.com",
+        "andrea.dahlke@enron.com",
+        "s..theriot@enron.com",
+        "sharen.cason@enron.com",
+        "m..forney@enron.com",
+        "a..allen@enron.com",
+        "r..brackett@enron.com",
+        "ann.murphy@enron.com",
+        "john.llodra@enron.com",
+        "kerri.thompson@enron.com",
+        "vale.snow@enron.com",
+        "fern.bright@enron.com",
+        "heath.bloom@enron.com"
+      ]
+    },
+    {
+      "index": 9,
+      "members": 12,
+      "density": 44.0,
+      "agents": [
+        "outlook.team@enron.com",
+        "maria.garza@enron.com",
+        "alexandra.villarreal@enron.com",
+        "chris.germany@enron.com",
+        "elizabeth.sager@enron.com",
+        "susan.pereira@enron.com",
+        "jeffrey.hodge@enron.com",
+        "stacy.dickson@enron.com",
+        "janette.elbertson@enron.com",
+        "mark.haedicke@enron.com",
+        "brad.mckay@enron.com",
+        "judy.townsend@enron.com",
+        "cliff.rivers@enron.com",
+        "jade.holt@enron.com",
+        "reed.banks@enron.com",
+        "glen.thorn@enron.com",
+        "hazel.swift@enron.com",
+        "brook.lane@enron.com",
+        "dale.oaks@enron.com",
+        "ivy.peak@enron.com"
+      ]
+    },
+    {
+      "index": 10,
+      "members": 12,
+      "density": 75.8,
+      "agents": [
+        "sally.beck@enron.com",
+        "leonardo.pacheco@enron.com",
+        "patti.thompson@enron.com",
+        "shona.wilson@enron.com",
+        "mike.jordan@enron.com",
+        "brent.price@enron.com",
+        "lexi.elliott@enron.com",
+        "mary.solmonson@enron.com",
+        "beth.apollo@enron.com",
+        "leslie.reeves@enron.com",
+        "sheri.thomas@enron.com",
+        "kenneth.thibodeaux@enron.com",
+        "noel.flint@enron.com",
+        "cass.winter@enron.com"
+      ]
+    },
+    {
+      "index": 11,
+      "members": 12,
+      "density": 67.2,
+      "agents": [
+        "christi.nicolay@enron.com",
+        "joe.hartsoe@enron.com",
+        "steven.kean@enron.com",
+        "mary.hain@enron.com",
+        "kevin.presto@enron.com",
+        "jeff.brown@enron.com",
+        "donna.fulton@enron.com",
+        "dave.mangskau@enron.com",
+        "kerry.stroup@enron.com",
+        "lloyd.will@enron.com",
+        "steve.walton@enron.com",
+        "ozzie.pagan@enron.com",
+        "remy.voss@enron.com"
+      ]
+    },
+    {
+      "index": 12,
+      "members": 12,
+      "density": 9.8,
+      "agents": [
+        "technology.enron@enron.com",
+        "rudy.acevedo@enron.com",
+        "dipak.agarwalla@enron.com",
+        "anubhav.aggarwal@enron.com",
+        "kim.alexander@enron.com",
+        "diana.allen@enron.com",
+        "k..allen@enron.com",
+        "chuck.ames@enron.com",
+        "d..anderson@enron.com",
+        "harry.arora@enron.com",
+        "debra.bailey@enron.com",
+        "bilal.bajwa@enron.com",
+        "jules.stark@enron.com",
+        "harley.dean@enron.com"
+      ]
+    },
+    {
+      "index": 13,
+      "members": 12,
+      "density": 150.4,
+      "agents": [
+        "kay.mann@enron.com",
+        "suzanne.adams@enron.com",
+        "ben.jacoby@enron.com",
+        "kathleen.carnahan@enron.com",
+        "carlos.sole@enron.com",
+        "sheila.tweed@enron.com",
+        "reagan.rorschach@enron.com",
+        "roseann.engeldorf@enron.com",
+        "heather.kroll@enron.com",
+        "lisa.bills@enron.com",
+        "gregg.penman@enron.com",
+        "fred.mitro@enron.com",
+        "blake.reyes@enron.com",
+        "kai.lund@enron.com",
+        "milan.chase@enron.com",
+        "arden.wolfe@enron.com",
+        "ellis.cruz@enron.com",
+        "tate.moon@enron.com",
+        "sloan.beck@enron.com",
+        "penn.rush@enron.com",
+        "teagan.lowe@enron.com",
+        "corin.vail@enron.com",
+        "darcy.haze@enron.com",
+        "briar.kent@enron.com",
+        "ashton.key@enron.com"
+      ]
+    },
+    {
+      "index": 14,
+      "members": 12,
+      "density": 3.8,
+      "agents": [
+        "bob.ambrocik@enron.com",
+        "aaron.adams@enron.com",
+        "ana.agudelo@enron.com",
+        "billie.akhave@enron.com",
+        "bridgette.anderson@enron.com",
+        "aaron.armstrong@enron.com",
+        "bryan.aubuchon@enron.com",
+        "c..aucoin@enron.com",
+        "ashraf.ayyat@enron.com",
+        "briant.baker@enron.com",
+        "arun.balasundaram@enron.com",
+        "andres.balmaceda@enron.com",
+        "kit.crane@enron.com",
+        "noel.birch@enron.com"
+      ]
+    },
+    {
+      "index": 15,
+      "members": 12,
+      "density": 25.2,
+      "agents": [
+        "julie.clyatt@enron.com",
+        "neil.davies@enron.com",
+        "david.oxley@enron.com",
+        ".williams@enron.com",
+        "tammie.schoppe@enron.com",
+        "daniel.muschar@enron.com",
+        "rourke@enron.com",
+        "paige.cox@enron.com",
+        "kari.oquinn@enron.com",
+        "amy.fitzpatrick@enron.com",
+        "jeanie.slone@enron.com",
+        "karen.buckley@enron.com",
+        "haven.lake@enron.com",
+        "marin.clay@enron.com",
+        "wynn.shaw@enron.com"
+      ]
+    },
+    {
+      "index": 16,
+      "members": 12,
+      "density": 58.9,
+      "agents": [
+        "janet.butler@enron.com",
+        "miyung.buster@enron.com",
+        "shelley.corman@enron.com",
+        "rod.hayslett@enron.com",
+        "denis.tu@enron.com",
+        "nancy.bagot@enron.com",
+        "stanley.horton@enron.com",
+        "robert.kilmer@enron.com",
+        "frazier.king@enron.com",
+        "drew.fossum@enron.com",
+        "teb.lokey@enron.com",
+        "bambi.heckerman@enron.com",
+        "hollis.true@enron.com",
+        "storm.hart@enron.com"
+      ]
+    },
+    {
+      "index": 17,
+      "members": 12,
+      "density": 52.3,
+      "agents": [
+        "rosalee.fleming@enron.com",
+        "katherine.brown@enron.com",
+        "kenneth.lay@enron.com",
+        "rick.buy@enron.com",
+        "james.derrick@enron.com",
+        "mark.koenig@enron.com",
+        "jeffrey.mcmahon@enron.com",
+        "raymond.bowen@enron.com",
+        "richard.causey@enron.com",
+        "jim.fallon@enron.com",
+        "john.sherriff@enron.com",
+        "mike.mcconnell@enron.com",
+        "ember.cole@enron.com",
+        "linden.bray@enron.com"
+      ]
+    },
+    {
+      "index": 18,
+      "members": 12,
+      "density": 85.9,
+      "agents": [
+        "taffy.milligan@enron.com",
+        "susan.bailey@enron.com",
+        "robert.bruce@enron.com",
+        "brent.hendry@enron.com",
+        "mary.cook@enron.com",
+        "susan.flynn@enron.com",
+        "samantha.boyd@enron.com",
+        "deb.korkmas@enron.com",
+        "ann.white@enron.com",
+        "laurie.mayer@enron.com",
+        "anne.koehler@enron.com",
+        "holly.keiser@enron.com",
+        "onyx.vale@enron.com",
+        "quill.marsh@enron.com",
+        "rain.park@enron.com"
+      ]
+    },
+    {
+      "index": 19,
+      "members": 12,
+      "density": 47.5,
+      "agents": [
+        "tamara.black@enron.com",
+        "chris.dorland@enron.com",
+        "kayne.coulter@enron.com",
+        "juan.hernandez@enron.com",
+        "larry.campbell@enron.com",
+        "clint.dean@enron.com",
+        "patrick.hanse@enron.com",
+        "larry.jester@enron.com",
+        "tom.may@enron.com",
+        "jeffrey.miller@enron.com",
+        "juan.padron@enron.com",
+        "jeff.king@enron.com",
+        "sable.knox@enron.com",
+        "tobin.sage@enron.com",
+        "vesper.lark@enron.com",
+        "zephyr.dawn@enron.com",
+        "cove.helm@enron.com",
+        "flint.cross@enron.com",
+        "lyric.penn@enron.com",
+        "harbor.west@enron.com",
+        "summit.rose@enron.com",
+        "prairie.bloom@enron.com",
+        "canyon.ford@enron.com"
+      ]
+    },
+    {
+      "index": 20,
+      "members": 12,
+      "density": 96.5,
+      "agents": [
+        "vince.kaminski@enron.com",
+        "shirley.crenshaw@enron.com",
+        "stinson.gibner@enron.com",
+        "mike.roberts@enron.com",
+        "vasant.shanbhogue@enron.com",
+        "steven.leppard@enron.com",
+        "kevin.moore@enron.com",
+        "zimin.lu@enron.com",
+        "molly.magee@enron.com",
+        "grant.masson@enron.com",
+        "pinnamaneni.krishnarao@enron.com",
+        "christie.patrick@enron.com",
+        "coral.ash@enron.com",
+        "drift.pine@enron.com",
+        "echo.hill@enron.com"
+      ]
+    },
+    {
+      "index": 21,
+      "members": 12,
+      "density": 54.1,
+      "agents": [
+        "tim.belden@enron.com",
+        "carla.hoffman@enron.com",
+        "kay.chapman@enron.com",
+        "ray.alvarez@enron.com",
+        "robert.badeer@enron.com",
+        "kysa.alport@enron.com",
+        "david.delainey@enron.com",
+        "center.dl-portland@enron.com",
+        "sean.crandall@enron.com",
+        "mark.fischer@enron.com",
+        "mike.swerzbin@enron.com",
+        "jeff.richter@enron.com",
+        "frost.lake@enron.com",
+        "grove.bay@enron.com"
+      ]
+    },
+    {
+      "index": 22,
+      "members": 12,
+      "density": 123.7,
+      "agents": [
+        "eric.bass@enron.com",
+        "matthew.lenhart@enron.com",
+        "bryan.hull@enron.com",
+        "shanna.husser@enron.com",
+        "timothy.blanchard@enron.com",
+        "david.baumbach@enron.com",
+        "phillip.love@enron.com",
+        "brian.hoskins@enron.com",
+        "neal.winfree@enron.com",
+        "luis.mena@enron.com",
+        "michael.walters@enron.com",
+        "hector.campos@enron.com",
+        "isle.stone@enron.com"
+      ]
+    },
+    {
+      "index": 23,
+      "members": 12,
+      "density": 90.2,
+      "agents": [
+        "mike.grigsby@enron.com",
+        "ina.rangel@enron.com",
+        "tori.kuykendall@enron.com",
+        "monique.sanchez@enron.com",
+        "keith.holst@enron.com",
+        "jay.reitmeyer@enron.com",
+        "m..tholt@enron.com",
+        "l..gay@enron.com",
+        "matt.smith@enron.com",
+        "patti.sullivan@enron.com",
+        "jason.wolfe@enron.com",
+        "phillip.allen@enron.com",
+        "jet.creek@enron.com"
+      ]
+    },
+    {
+      "index": 24,
+      "members": 12,
+      "density": 49.0,
+      "agents": [
+        "victor.lamadrid@enron.com",
+        "scott.neal@enron.com",
+        "scott.goodell@enron.com",
+        "victoria.versen@enron.com",
+        "w..pereira@enron.com",
+        "jonathan.mckay@enron.com",
+        "craig.taylor@enron.com",
+        "f..brawner@enron.com",
+        "clarissa.garcia@enron.com",
+        "frank.vickers@enron.com",
+        "f..keavey@enron.com",
+        "maureen.smith@enron.com"
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "email": "jeff.dasovich@enron.com",
+      "name": "Jeff Dasovich",
+      "role": "lead",
+      "team": 0,
+      "sent": 11387,
+      "received": 11268,
+      "reply_rate": 0.495,
+      "urgent_rate": 0.0005,
+      "avg_body_length": 1987,
+      "peak_hours": [
+        4,
+        10,
+        11
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "susan.mara@enron.com",
+      "name": "Susan Mara",
+      "role": "receiver",
+      "team": 0,
+      "sent": 1683,
+      "received": 8491,
+      "reply_rate": 0.118,
+      "urgent_rate": 0.0012,
+      "avg_body_length": 2564,
+      "peak_hours": [
+        8,
+        3,
+        9
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "james.steffes@enron.com",
+      "name": "James Steffes",
+      "role": "receiver",
+      "team": 0,
+      "sent": 1322,
+      "received": 10325,
+      "reply_rate": 0.187,
+      "urgent_rate": 0.0015,
+      "avg_body_length": 2288,
+      "peak_hours": [
+        0,
+        9,
+        5
+      ],
+      "in_cluster_links": 10
+    },
+    {
+      "email": "richard.shapiro@enron.com",
+      "name": "Richard Shapiro",
+      "role": "receiver",
+      "team": 0,
+      "sent": 1209,
+      "received": 14613,
+      "reply_rate": 0.38,
+      "urgent_rate": 0.005,
+      "avg_body_length": 2589,
+      "peak_hours": [
+        6,
+        8,
+        10
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "karen.denne@enron.com",
+      "name": "Karen Denne",
+      "role": "receiver",
+      "team": 0,
+      "sent": 851,
+      "received": 6182,
+      "reply_rate": 0.18,
+      "urgent_rate": 0.0024,
+      "avg_body_length": 3815,
+      "peak_hours": [
+        10,
+        6,
+        8
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "paul.kaufman@enron.com",
+      "name": "Paul Kaufman",
+      "role": "receiver",
+      "team": 0,
+      "sent": 388,
+      "received": 7647,
+      "reply_rate": 0.327,
+      "urgent_rate": 0.0026,
+      "avg_body_length": 1517,
+      "peak_hours": [
+        7,
+        4,
+        8
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "skean@enron.com",
+      "name": "Skean",
+      "role": "receiver",
+      "team": 0,
+      "sent": 0,
+      "received": 3035,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "sandra.mccubbin@enron.com",
+      "name": "Sandra Mccubbin",
+      "role": "receiver",
+      "team": 0,
+      "sent": 69,
+      "received": 5589,
+      "reply_rate": 0.478,
+      "urgent_rate": 0.0,
+      "avg_body_length": 6531,
+      "peak_hours": [
+        5,
+        2,
+        4
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "harry.kingerski@enron.com",
+      "name": "Harry Kingerski",
+      "role": "receiver",
+      "team": 0,
+      "sent": 265,
+      "received": 5711,
+      "reply_rate": 0.343,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1595,
+      "peak_hours": [
+        9,
+        1,
+        2
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "alan.comnes@enron.com",
+      "name": "Alan Comnes",
+      "role": "receiver",
+      "team": 0,
+      "sent": 644,
+      "received": 5568,
+      "reply_rate": 0.293,
+      "urgent_rate": 0.0,
+      "avg_body_length": 3468,
+      "peak_hours": [
+        5,
+        10,
+        4
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "mpalmer@enron.com",
+      "name": "Mpalmer",
+      "role": "receiver",
+      "team": 0,
+      "sent": 0,
+      "received": 2495,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "james.wright@enron.com",
+      "name": "James Wright",
+      "role": "receiver",
+      "team": 0,
+      "sent": 0,
+      "received": 2773,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "veronica.espinoza@enron.com",
+      "name": "Veronica Espinoza",
+      "role": "lead",
+      "team": 1,
+      "sent": 688,
+      "received": 1542,
+      "reply_rate": 0.022,
+      "urgent_rate": 0.0,
+      "avg_body_length": 566,
+      "peak_hours": [
+        2,
+        8,
+        3
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "recipients@enron.com",
+      "name": "Recipients",
+      "role": "receiver",
+      "team": 1,
+      "sent": 0,
+      "received": 2374,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "bob.bowen@enron.com",
+      "name": "Bob Bowen",
+      "role": "receiver",
+      "team": 1,
+      "sent": 52,
+      "received": 2624,
+      "reply_rate": 0.288,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1569,
+      "peak_hours": [
+        7,
+        8,
+        1
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "debra.perlingiere@enron.com",
+      "name": "Debra Perlingiere",
+      "role": "broadcaster",
+      "team": 1,
+      "sent": 4355,
+      "received": 2692,
+      "reply_rate": 0.423,
+      "urgent_rate": 0.0,
+      "avg_body_length": 474,
+      "peak_hours": [
+        2,
+        3,
+        7
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "tana.jones@enron.com",
+      "name": "Tana Jones",
+      "role": "member",
+      "team": 1,
+      "sent": 8447,
+      "received": 11464,
+      "reply_rate": 0.38,
+      "urgent_rate": 0.0034,
+      "avg_body_length": 1016,
+      "peak_hours": [
+        8,
+        9,
+        7
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "andrea.ring@enron.com",
+      "name": "Andrea Ring",
+      "role": "receiver",
+      "team": 1,
+      "sent": 471,
+      "received": 2331,
+      "reply_rate": 0.263,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1057,
+      "peak_hours": [
+        8,
+        7,
+        6
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "gerald.nemec@enron.com",
+      "name": "Gerald Nemec",
+      "role": "member",
+      "team": 1,
+      "sent": 3868,
+      "received": 5526,
+      "reply_rate": 0.306,
+      "urgent_rate": 0.0005,
+      "avg_body_length": 841,
+      "peak_hours": [
+        8,
+        2,
+        9
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "linda.ewing@enron.com",
+      "name": "Linda Ewing",
+      "role": "receiver",
+      "team": 1,
+      "sent": 1,
+      "received": 811,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1284,
+      "peak_hours": [
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "david.fairley@enron.com",
+      "name": "David Fairley",
+      "role": "receiver",
+      "team": 1,
+      "sent": 86,
+      "received": 2133,
+      "reply_rate": 0.453,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1478,
+      "peak_hours": [
+        12,
+        6,
+        2
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "sara.shackleton@enron.com",
+      "name": "Sara Shackleton",
+      "role": "member",
+      "team": 1,
+      "sent": 8757,
+      "received": 9549,
+      "reply_rate": 0.324,
+      "urgent_rate": 0.0015,
+      "avg_body_length": 1245,
+      "peak_hours": [
+        1,
+        2,
+        9
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "christian.yoder@enron.com",
+      "name": "Christian Yoder",
+      "role": "receiver",
+      "team": 1,
+      "sent": 213,
+      "received": 3929,
+      "reply_rate": 0.338,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2142,
+      "peak_hours": [
+        7,
+        10,
+        8
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "brad.coleman@enron.com",
+      "name": "Brad Coleman",
+      "role": "receiver",
+      "team": 1,
+      "sent": 0,
+      "received": 1123,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "rhonda.denton@enron.com",
+      "name": "Rhonda Denton",
+      "role": "lead",
+      "team": 2,
+      "sent": 760,
+      "received": 978,
+      "reply_rate": 0.142,
+      "urgent_rate": 0.0,
+      "avg_body_length": 587,
+      "peak_hours": [
+        5,
+        8,
+        6
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "kate.symes@enron.com",
+      "name": "Kate Symes",
+      "role": "member",
+      "team": 2,
+      "sent": 5435,
+      "received": 5218,
+      "reply_rate": 0.734,
+      "urgent_rate": 0.0004,
+      "avg_body_length": 792,
+      "peak_hours": [
+        6,
+        7,
+        5
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "mark.guzman@enron.com",
+      "name": "Mark Guzman",
+      "role": "member",
+      "team": 2,
+      "sent": 953,
+      "received": 1890,
+      "reply_rate": 0.711,
+      "urgent_rate": 0.0,
+      "avg_body_length": 368,
+      "peak_hours": [
+        1,
+        3,
+        2
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "veronica.gonzalez@enron.com",
+      "name": "Veronica Gonzalez",
+      "role": "receiver",
+      "team": 2,
+      "sent": 139,
+      "received": 1092,
+      "reply_rate": 0.058,
+      "urgent_rate": 0.0,
+      "avg_body_length": 266,
+      "peak_hours": [
+        3,
+        1,
+        2
+      ],
+      "in_cluster_links": 10
+    },
+    {
+      "email": "lisa.lees@enron.com",
+      "name": "Lisa Lees",
+      "role": "receiver",
+      "team": 2,
+      "sent": 134,
+      "received": 2711,
+      "reply_rate": 0.179,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2424,
+      "peak_hours": [
+        8,
+        6,
+        7
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "genia.fitzgerald@enron.com",
+      "name": "Genia Fitzgerald",
+      "role": "receiver",
+      "team": 2,
+      "sent": 105,
+      "received": 3363,
+      "reply_rate": 0.305,
+      "urgent_rate": 0.0,
+      "avg_body_length": 868,
+      "peak_hours": [
+        6,
+        8,
+        5
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "melissa.murphy@enron.com",
+      "name": "Melissa Murphy",
+      "role": "receiver",
+      "team": 2,
+      "sent": 253,
+      "received": 2021,
+      "reply_rate": 0.265,
+      "urgent_rate": 0.0,
+      "avg_body_length": 779,
+      "peak_hours": [
+        7,
+        2,
+        9
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "tracy.ngo@enron.com",
+      "name": "Tracy Ngo",
+      "role": "receiver",
+      "team": 2,
+      "sent": 202,
+      "received": 3204,
+      "reply_rate": 0.376,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1002,
+      "peak_hours": [
+        0,
+        2,
+        1
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "edward.sacks@enron.com",
+      "name": "Edward Sacks",
+      "role": "receiver",
+      "team": 2,
+      "sent": 181,
+      "received": 3586,
+      "reply_rate": 0.249,
+      "urgent_rate": 0.0,
+      "avg_body_length": 781,
+      "peak_hours": [
+        3,
+        5,
+        2
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "russell.diamond@enron.com",
+      "name": "Russell Diamond",
+      "role": "receiver",
+      "team": 2,
+      "sent": 304,
+      "received": 3000,
+      "reply_rate": 0.329,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1095,
+      "peak_hours": [
+        3,
+        2,
+        9
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "david.portz@enron.com",
+      "name": "David Portz",
+      "role": "receiver",
+      "team": 2,
+      "sent": 271,
+      "received": 2873,
+      "reply_rate": 0.328,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1499,
+      "peak_hours": [
+        9,
+        11,
+        5
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "leslie.hansen@enron.com",
+      "name": "Leslie Hansen",
+      "role": "receiver",
+      "team": 2,
+      "sent": 829,
+      "received": 3292,
+      "reply_rate": 0.678,
+      "urgent_rate": 0.0,
+      "avg_body_length": 929,
+      "peak_hours": [
+        2,
+        7,
+        4
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "cheryl.johnson@enron.com",
+      "name": "Cheryl Johnson",
+      "role": "lead",
+      "team": 3,
+      "sent": 452,
+      "received": 482,
+      "reply_rate": 0.046,
+      "urgent_rate": 0.0,
+      "avg_body_length": 718,
+      "peak_hours": [
+        8,
+        4,
+        9
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "stephanie.panus@enron.com",
+      "name": "Stephanie Panus",
+      "role": "receiver",
+      "team": 3,
+      "sent": 671,
+      "received": 3833,
+      "reply_rate": 0.168,
+      "urgent_rate": 0.0,
+      "avg_body_length": 723,
+      "peak_hours": [
+        7,
+        8,
+        6
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "kori.loibl@enron.com",
+      "name": "Kori Loibl",
+      "role": "receiver",
+      "team": 3,
+      "sent": 53,
+      "received": 1343,
+      "reply_rate": 0.189,
+      "urgent_rate": 0.0,
+      "avg_body_length": 684,
+      "peak_hours": [
+        5,
+        3,
+        0
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "brant.reves@enron.com",
+      "name": "Brant Reves",
+      "role": "receiver",
+      "team": 3,
+      "sent": 356,
+      "received": 2380,
+      "reply_rate": 0.202,
+      "urgent_rate": 0.0,
+      "avg_body_length": 756,
+      "peak_hours": [
+        2,
+        6,
+        3
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "stacey.richardson@enron.com",
+      "name": "Stacey Richardson",
+      "role": "receiver",
+      "team": 3,
+      "sent": 123,
+      "received": 1603,
+      "reply_rate": 0.407,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1414,
+      "peak_hours": [
+        15,
+        7,
+        14
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "bernice.rodriguez@enron.com",
+      "name": "Bernice Rodriguez",
+      "role": "receiver",
+      "team": 3,
+      "sent": 39,
+      "received": 1590,
+      "reply_rate": 0.487,
+      "urgent_rate": 0.0256,
+      "avg_body_length": 1031,
+      "peak_hours": [
+        3,
+        2,
+        12
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "david.hardy@enron.com",
+      "name": "David Hardy",
+      "role": "receiver",
+      "team": 3,
+      "sent": 4,
+      "received": 874,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 3650,
+      "peak_hours": [
+        9,
+        11
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "marilyn.colbert@enron.com",
+      "name": "Marilyn Colbert",
+      "role": "receiver",
+      "team": 3,
+      "sent": 31,
+      "received": 1117,
+      "reply_rate": 0.194,
+      "urgent_rate": 0.0,
+      "avg_body_length": 794,
+      "peak_hours": [
+        12,
+        10,
+        8
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "laurel.adams@enron.com",
+      "name": "Laurel Adams",
+      "role": "receiver",
+      "team": 3,
+      "sent": 170,
+      "received": 1446,
+      "reply_rate": 0.271,
+      "urgent_rate": 0.0118,
+      "avg_body_length": 810,
+      "peak_hours": [
+        7,
+        1,
+        5
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "cyndie.balfour-flanagan@enron.com",
+      "name": "Cyndie Balfour-Flanagan",
+      "role": "receiver",
+      "team": 3,
+      "sent": 55,
+      "received": 985,
+      "reply_rate": 0.418,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1992,
+      "peak_hours": [
+        8,
+        7,
+        9
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "anthony.campos@enron.com",
+      "name": "Anthony Campos",
+      "role": "receiver",
+      "team": 3,
+      "sent": 28,
+      "received": 1538,
+      "reply_rate": 0.25,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2351,
+      "peak_hours": [
+        23,
+        3,
+        7
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "mike.croucher@enron.com",
+      "name": "Mike Croucher",
+      "role": "receiver",
+      "team": 3,
+      "sent": 7,
+      "received": 477,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 926,
+      "peak_hours": [
+        14,
+        8,
+        7
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "jae.black@enron.com",
+      "name": "Jae Black",
+      "role": "lead",
+      "team": 4,
+      "sent": 676,
+      "received": 555,
+      "reply_rate": 0.031,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1951,
+      "peak_hours": [
+        6,
+        7,
+        12
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "m..presto@enron.com",
+      "name": "M  Presto",
+      "role": "receiver",
+      "team": 4,
+      "sent": 883,
+      "received": 2375,
+      "reply_rate": 0.669,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1410,
+      "peak_hours": [
+        7,
+        9,
+        12
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "don.baughman@enron.com",
+      "name": "Don Baughman",
+      "role": "receiver",
+      "team": 4,
+      "sent": 266,
+      "received": 3407,
+      "reply_rate": 0.173,
+      "urgent_rate": 0.0,
+      "avg_body_length": 889,
+      "peak_hours": [
+        9,
+        11,
+        8
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "j..sturm@enron.com",
+      "name": "J  Sturm",
+      "role": "receiver",
+      "team": 4,
+      "sent": 185,
+      "received": 1925,
+      "reply_rate": 0.416,
+      "urgent_rate": 0.0,
+      "avg_body_length": 847,
+      "peak_hours": [
+        13,
+        8,
+        11
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "mike.carson@enron.com",
+      "name": "Mike Carson",
+      "role": "receiver",
+      "team": 4,
+      "sent": 721,
+      "received": 2208,
+      "reply_rate": 0.444,
+      "urgent_rate": 0.0,
+      "avg_body_length": 431,
+      "peak_hours": [
+        3,
+        8,
+        4
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "doug.gilbert-smith@enron.com",
+      "name": "Doug Gilbert-Smith",
+      "role": "receiver",
+      "team": 4,
+      "sent": 131,
+      "received": 2903,
+      "reply_rate": 0.389,
+      "urgent_rate": 0.0,
+      "avg_body_length": 815,
+      "peak_hours": [
+        7,
+        13,
+        10
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "dana.davis@enron.com",
+      "name": "Dana Davis",
+      "role": "receiver",
+      "team": 4,
+      "sent": 896,
+      "received": 3312,
+      "reply_rate": 0.281,
+      "urgent_rate": 0.0,
+      "avg_body_length": 763,
+      "peak_hours": [
+        8,
+        7,
+        1
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "maria.valdes@enron.com",
+      "name": "Maria Valdes",
+      "role": "receiver",
+      "team": 4,
+      "sent": 8,
+      "received": 1937,
+      "reply_rate": 0.5,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1126,
+      "peak_hours": [
+        4,
+        7,
+        8
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "russell.ballato@enron.com",
+      "name": "Russell Ballato",
+      "role": "receiver",
+      "team": 4,
+      "sent": 6,
+      "received": 2111,
+      "reply_rate": 0.167,
+      "urgent_rate": 0.0,
+      "avg_body_length": 326,
+      "peak_hours": [
+        6,
+        8,
+        7
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "d..thomas@enron.com",
+      "name": "D  Thomas",
+      "role": "receiver",
+      "team": 4,
+      "sent": 160,
+      "received": 1360,
+      "reply_rate": 0.475,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1167,
+      "peak_hours": [
+        7,
+        8,
+        9
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "robert.benson@enron.com",
+      "name": "Robert Benson",
+      "role": "receiver",
+      "team": 4,
+      "sent": 29,
+      "received": 2514,
+      "reply_rate": 0.793,
+      "urgent_rate": 0.0,
+      "avg_body_length": 548,
+      "peak_hours": [
+        3,
+        2,
+        11
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "corry.bentley@enron.com",
+      "name": "Corry Bentley",
+      "role": "receiver",
+      "team": 4,
+      "sent": 36,
+      "received": 2262,
+      "reply_rate": 0.306,
+      "urgent_rate": 0.0,
+      "avg_body_length": 933,
+      "peak_hours": [
+        8,
+        12,
+        9
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "ginger.dernehl@enron.com",
+      "name": "Ginger Dernehl",
+      "role": "lead",
+      "team": 5,
+      "sent": 925,
+      "received": 2311,
+      "reply_rate": 0.077,
+      "urgent_rate": 0.0076,
+      "avg_body_length": 2000,
+      "peak_hours": [
+        4,
+        7,
+        9
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "linda.robertson@enron.com",
+      "name": "Linda Robertson",
+      "role": "receiver",
+      "team": 5,
+      "sent": 316,
+      "received": 4708,
+      "reply_rate": 0.168,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1555,
+      "peak_hours": [
+        8,
+        3,
+        7
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "elizabeth.linnell@enron.com",
+      "name": "Elizabeth Linnell",
+      "role": "receiver",
+      "team": 5,
+      "sent": 187,
+      "received": 2575,
+      "reply_rate": 0.214,
+      "urgent_rate": 0.0107,
+      "avg_body_length": 1682,
+      "peak_hours": [
+        7,
+        10,
+        4
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "sue.nord@enron.com",
+      "name": "Sue Nord",
+      "role": "receiver",
+      "team": 5,
+      "sent": 254,
+      "received": 1490,
+      "reply_rate": 0.236,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2593,
+      "peak_hours": [
+        7,
+        1,
+        5
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "sarah.novosel@enron.com",
+      "name": "Sarah Novosel",
+      "role": "receiver",
+      "team": 5,
+      "sent": 565,
+      "received": 5574,
+      "reply_rate": 0.143,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1885,
+      "peak_hours": [
+        8,
+        2,
+        9
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "maureen.mcvicker@enron.com",
+      "name": "Maureen Mcvicker",
+      "role": "receiver",
+      "team": 5,
+      "sent": 1144,
+      "received": 2726,
+      "reply_rate": 0.226,
+      "urgent_rate": 0.007,
+      "avg_body_length": 832,
+      "peak_hours": [
+        7,
+        9,
+        10
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "janine.migden@enron.com",
+      "name": "Janine Migden",
+      "role": "receiver",
+      "team": 5,
+      "sent": 191,
+      "received": 1729,
+      "reply_rate": 0.34,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2505,
+      "peak_hours": [
+        8,
+        6,
+        3
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "steve.montovano@enron.com",
+      "name": "Steve Montovano",
+      "role": "receiver",
+      "team": 5,
+      "sent": 71,
+      "received": 1781,
+      "reply_rate": 0.296,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1894,
+      "peak_hours": [
+        6,
+        7,
+        8
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "daniel.allegretti@enron.com",
+      "name": "Daniel Allegretti",
+      "role": "receiver",
+      "team": 5,
+      "sent": 17,
+      "received": 1622,
+      "reply_rate": 0.176,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2209,
+      "peak_hours": [
+        6,
+        3,
+        9
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "howard.fromer@enron.com",
+      "name": "Howard Fromer",
+      "role": "receiver",
+      "team": 5,
+      "sent": 98,
+      "received": 1497,
+      "reply_rate": 0.082,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2546,
+      "peak_hours": [
+        8,
+        11,
+        12
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "robert.hemstock@enron.com",
+      "name": "Robert Hemstock",
+      "role": "receiver",
+      "team": 5,
+      "sent": 101,
+      "received": 1097,
+      "reply_rate": 0.277,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2800,
+      "peak_hours": [
+        11,
+        1,
+        13
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "lisa.yoho@enron.com",
+      "name": "Lisa Yoho",
+      "role": "receiver",
+      "team": 5,
+      "sent": 329,
+      "received": 1455,
+      "reply_rate": 0.234,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1815,
+      "peak_hours": [
+        4,
+        6,
+        2
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "lorna.brennan@enron.com",
+      "name": "Lorna Brennan",
+      "role": "lead",
+      "team": 6,
+      "sent": 806,
+      "received": 323,
+      "reply_rate": 0.006,
+      "urgent_rate": 0.0,
+      "avg_body_length": 3764,
+      "peak_hours": [
+        2,
+        7,
+        9
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "lorraine.lindberg@enron.com",
+      "name": "Lorraine Lindberg",
+      "role": "receiver",
+      "team": 6,
+      "sent": 211,
+      "received": 3474,
+      "reply_rate": 0.137,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1124,
+      "peak_hours": [
+        8,
+        9,
+        7
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "tk.lohman@enron.com",
+      "name": "Tk Lohman",
+      "role": "receiver",
+      "team": 6,
+      "sent": 185,
+      "received": 3164,
+      "reply_rate": 0.184,
+      "urgent_rate": 0.0,
+      "avg_body_length": 800,
+      "peak_hours": [
+        7,
+        8,
+        6
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "lindy.donoho@enron.com",
+      "name": "Lindy Donoho",
+      "role": "receiver",
+      "team": 6,
+      "sent": 378,
+      "received": 2957,
+      "reply_rate": 0.405,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1109,
+      "peak_hours": [
+        7,
+        6,
+        8
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "kevin.hyatt@enron.com",
+      "name": "Kevin Hyatt",
+      "role": "receiver",
+      "team": 6,
+      "sent": 739,
+      "received": 2673,
+      "reply_rate": 0.244,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1209,
+      "peak_hours": [
+        8,
+        9,
+        7
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "michelle.lokay@enron.com",
+      "name": "Michelle Lokay",
+      "role": "receiver",
+      "team": 6,
+      "sent": 845,
+      "received": 3445,
+      "reply_rate": 0.298,
+      "urgent_rate": 0.0,
+      "avg_body_length": 899,
+      "peak_hours": [
+        7,
+        8,
+        6
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "steven.harris@enron.com",
+      "name": "Steven Harris",
+      "role": "receiver",
+      "team": 6,
+      "sent": 225,
+      "received": 3741,
+      "reply_rate": 0.689,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1357,
+      "peak_hours": [
+        7,
+        8,
+        14
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "jeffery.fawcett@enron.com",
+      "name": "Jeffery Fawcett",
+      "role": "receiver",
+      "team": 6,
+      "sent": 409,
+      "received": 2044,
+      "reply_rate": 0.024,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2901,
+      "peak_hours": [
+        2,
+        1,
+        8
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "kimberly.watson@enron.com",
+      "name": "Kimberly Watson",
+      "role": "receiver",
+      "team": 6,
+      "sent": 1213,
+      "received": 3142,
+      "reply_rate": 0.358,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1281,
+      "peak_hours": [
+        7,
+        11,
+        14
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "john.dushinske@enron.com",
+      "name": "John Dushinske",
+      "role": "receiver",
+      "team": 6,
+      "sent": 4,
+      "received": 1076,
+      "reply_rate": 0.25,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1924,
+      "peak_hours": [
+        7,
+        12,
+        6
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "jo.williams@enron.com",
+      "name": "Jo Williams",
+      "role": "receiver",
+      "team": 6,
+      "sent": 14,
+      "received": 878,
+      "reply_rate": 0.357,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2281,
+      "peak_hours": [
+        13,
+        4,
+        3
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "dave.neubauer@enron.com",
+      "name": "Dave Neubauer",
+      "role": "receiver",
+      "team": 6,
+      "sent": 10,
+      "received": 1179,
+      "reply_rate": 0.4,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1037,
+      "peak_hours": [
+        13,
+        12,
+        16
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "david.forster@enron.com",
+      "name": "David Forster",
+      "role": "lead",
+      "team": 7,
+      "sent": 891,
+      "received": 2247,
+      "reply_rate": 0.23,
+      "urgent_rate": 0.0011,
+      "avg_body_length": 1627,
+      "peak_hours": [
+        7,
+        13,
+        11
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "mark.taylor@enron.com",
+      "name": "Mark Taylor",
+      "role": "receiver",
+      "team": 7,
+      "sent": 4078,
+      "received": 8787,
+      "reply_rate": 0.484,
+      "urgent_rate": 0.0039,
+      "avg_body_length": 1810,
+      "peak_hours": [
+        2,
+        3,
+        9
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "louise.kitchen@enron.com",
+      "name": "Louise Kitchen",
+      "role": "receiver",
+      "team": 7,
+      "sent": 1720,
+      "received": 8042,
+      "reply_rate": 0.512,
+      "urgent_rate": 0.0023,
+      "avg_body_length": 1370,
+      "peak_hours": [
+        7,
+        6,
+        10
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "john.lavorato@enron.com",
+      "name": "John Lavorato",
+      "role": "receiver",
+      "team": 7,
+      "sent": 2575,
+      "received": 7111,
+      "reply_rate": 0.435,
+      "urgent_rate": 0.0019,
+      "avg_body_length": 552,
+      "peak_hours": [
+        2,
+        3,
+        0
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "carol.clair@enron.com",
+      "name": "Carol Clair",
+      "role": "member",
+      "team": 7,
+      "sent": 3544,
+      "received": 3887,
+      "reply_rate": 0.365,
+      "urgent_rate": 0.0,
+      "avg_body_length": 990,
+      "peak_hours": [
+        4,
+        2,
+        3
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "andy.zipper@enron.com",
+      "name": "Andy Zipper",
+      "role": "receiver",
+      "team": 7,
+      "sent": 469,
+      "received": 2237,
+      "reply_rate": 0.514,
+      "urgent_rate": 0.0,
+      "avg_body_length": 517,
+      "peak_hours": [
+        7,
+        6,
+        9
+      ],
+      "in_cluster_links": 10
+    },
+    {
+      "email": "justin.rostant@enron.com",
+      "name": "Justin Rostant",
+      "role": "receiver",
+      "team": 7,
+      "sent": 186,
+      "received": 968,
+      "reply_rate": 0.048,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1577,
+      "peak_hours": [
+        15,
+        8,
+        16
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "adam.johnson@enron.com",
+      "name": "Adam Johnson",
+      "role": "receiver",
+      "team": 7,
+      "sent": 136,
+      "received": 387,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 642,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "simone.rose@enron.com",
+      "name": "Simone Rose",
+      "role": "receiver",
+      "team": 7,
+      "sent": 137,
+      "received": 355,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 763,
+      "peak_hours": [
+        10,
+        9,
+        8
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "greg.whalley@enron.com",
+      "name": "Greg Whalley",
+      "role": "receiver",
+      "team": 7,
+      "sent": 536,
+      "received": 5841,
+      "reply_rate": 0.642,
+      "urgent_rate": 0.0,
+      "avg_body_length": 803,
+      "peak_hours": [
+        1,
+        6,
+        0
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "john.arnold@enron.com",
+      "name": "John Arnold",
+      "role": "connector",
+      "team": 7,
+      "sent": 3568,
+      "received": 3229,
+      "reply_rate": 0.58,
+      "urgent_rate": 0.0011,
+      "avg_body_length": 1001,
+      "peak_hours": [
+        9,
+        8,
+        10
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "bob.shults@enron.com",
+      "name": "Bob Shults",
+      "role": "receiver",
+      "team": 7,
+      "sent": 304,
+      "received": 1755,
+      "reply_rate": 0.181,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1226,
+      "peak_hours": [
+        9,
+        16,
+        6
+      ],
+      "in_cluster_links": 10
+    },
+    {
+      "email": "l..denton@enron.com",
+      "name": "L  Denton",
+      "role": "lead",
+      "team": 8,
+      "sent": 197,
+      "received": 296,
+      "reply_rate": 0.061,
+      "urgent_rate": 0.0,
+      "avg_body_length": 432,
+      "peak_hours": [
+        12,
+        8,
+        14
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "w..white@enron.com",
+      "name": "W  White",
+      "role": "receiver",
+      "team": 8,
+      "sent": 488,
+      "received": 1794,
+      "reply_rate": 0.408,
+      "urgent_rate": 0.002,
+      "avg_body_length": 1074,
+      "peak_hours": [
+        8,
+        14,
+        7
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "casey.evans@enron.com",
+      "name": "Casey Evans",
+      "role": "receiver",
+      "team": 8,
+      "sent": 177,
+      "received": 1377,
+      "reply_rate": 0.35,
+      "urgent_rate": 0.0056,
+      "avg_body_length": 870,
+      "peak_hours": [
+        14,
+        15,
+        7
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "andrea.dahlke@enron.com",
+      "name": "Andrea Dahlke",
+      "role": "receiver",
+      "team": 8,
+      "sent": 108,
+      "received": 994,
+      "reply_rate": 0.148,
+      "urgent_rate": 0.0,
+      "avg_body_length": 616,
+      "peak_hours": [
+        15,
+        12,
+        7
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "s..theriot@enron.com",
+      "name": "S  Theriot",
+      "role": "receiver",
+      "team": 8,
+      "sent": 61,
+      "received": 971,
+      "reply_rate": 0.18,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1125,
+      "peak_hours": [
+        15,
+        6,
+        12
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "sharen.cason@enron.com",
+      "name": "Sharen Cason",
+      "role": "receiver",
+      "team": 8,
+      "sent": 345,
+      "received": 1658,
+      "reply_rate": 0.162,
+      "urgent_rate": 0.0,
+      "avg_body_length": 411,
+      "peak_hours": [
+        8,
+        1,
+        9
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "m..forney@enron.com",
+      "name": "M  Forney",
+      "role": "receiver",
+      "team": 8,
+      "sent": 449,
+      "received": 1221,
+      "reply_rate": 0.294,
+      "urgent_rate": 0.0,
+      "avg_body_length": 948,
+      "peak_hours": [
+        7,
+        6,
+        10
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "a..allen@enron.com",
+      "name": "A  Allen",
+      "role": "receiver",
+      "team": 8,
+      "sent": 4,
+      "received": 728,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1109,
+      "peak_hours": [
+        7,
+        8,
+        9
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "r..brackett@enron.com",
+      "name": "R  Brackett",
+      "role": "receiver",
+      "team": 8,
+      "sent": 25,
+      "received": 1307,
+      "reply_rate": 0.36,
+      "urgent_rate": 0.0,
+      "avg_body_length": 10503,
+      "peak_hours": [
+        7,
+        13,
+        6
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "ann.murphy@enron.com",
+      "name": "Ann Murphy",
+      "role": "receiver",
+      "team": 8,
+      "sent": 9,
+      "received": 587,
+      "reply_rate": 0.111,
+      "urgent_rate": 0.0,
+      "avg_body_length": 431,
+      "peak_hours": [
+        11,
+        8,
+        13
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "john.llodra@enron.com",
+      "name": "John Llodra",
+      "role": "receiver",
+      "team": 8,
+      "sent": 50,
+      "received": 1229,
+      "reply_rate": 0.16,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1096,
+      "peak_hours": [
+        9,
+        7,
+        6
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "kerri.thompson@enron.com",
+      "name": "Kerri Thompson",
+      "role": "receiver",
+      "team": 8,
+      "sent": 711,
+      "received": 1429,
+      "reply_rate": 0.2,
+      "urgent_rate": 0.0,
+      "avg_body_length": 217,
+      "peak_hours": [
+        8,
+        7,
+        9
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "outlook.team@enron.com",
+      "name": "Outlook Team",
+      "role": "lead",
+      "team": 9,
+      "sent": 462,
+      "received": 120,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.7186,
+      "avg_body_length": 1573,
+      "peak_hours": [
+        8,
+        4,
+        7
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "maria.garza@enron.com",
+      "name": "Maria Garza",
+      "role": "receiver",
+      "team": 9,
+      "sent": 24,
+      "received": 637,
+      "reply_rate": 0.125,
+      "urgent_rate": 0.0,
+      "avg_body_length": 702,
+      "peak_hours": [
+        7,
+        9,
+        8
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "alexandra.villarreal@enron.com",
+      "name": "Alexandra Villarreal",
+      "role": "receiver",
+      "team": 9,
+      "sent": 102,
+      "received": 246,
+      "reply_rate": 0.657,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1521,
+      "peak_hours": [
+        10,
+        12,
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "chris.germany@enron.com",
+      "name": "Chris Germany",
+      "role": "broadcaster",
+      "team": 9,
+      "sent": 8745,
+      "received": 3275,
+      "reply_rate": 0.362,
+      "urgent_rate": 0.0006,
+      "avg_body_length": 905,
+      "peak_hours": [
+        6,
+        7,
+        5
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "elizabeth.sager@enron.com",
+      "name": "Elizabeth Sager",
+      "role": "receiver",
+      "team": 9,
+      "sent": 2625,
+      "received": 5300,
+      "reply_rate": 0.458,
+      "urgent_rate": 0.003,
+      "avg_body_length": 1083,
+      "peak_hours": [
+        7,
+        2,
+        6
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "susan.pereira@enron.com",
+      "name": "Susan Pereira",
+      "role": "receiver",
+      "team": 9,
+      "sent": 411,
+      "received": 838,
+      "reply_rate": 0.64,
+      "urgent_rate": 0.0,
+      "avg_body_length": 880,
+      "peak_hours": [
+        4,
+        6,
+        8
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "jeffrey.hodge@enron.com",
+      "name": "Jeffrey Hodge",
+      "role": "receiver",
+      "team": 9,
+      "sent": 194,
+      "received": 3694,
+      "reply_rate": 0.402,
+      "urgent_rate": 0.0103,
+      "avg_body_length": 1338,
+      "peak_hours": [
+        7,
+        9,
+        5
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "stacy.dickson@enron.com",
+      "name": "Stacy Dickson",
+      "role": "receiver",
+      "team": 9,
+      "sent": 448,
+      "received": 2671,
+      "reply_rate": 0.489,
+      "urgent_rate": 0.0,
+      "avg_body_length": 589,
+      "peak_hours": [
+        9,
+        2,
+        6
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "janette.elbertson@enron.com",
+      "name": "Janette Elbertson",
+      "role": "receiver",
+      "team": 9,
+      "sent": 546,
+      "received": 1217,
+      "reply_rate": 0.055,
+      "urgent_rate": 0.0,
+      "avg_body_length": 818,
+      "peak_hours": [
+        7,
+        3,
+        2
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "mark.haedicke@enron.com",
+      "name": "Mark Haedicke",
+      "role": "receiver",
+      "team": 9,
+      "sent": 1928,
+      "received": 3984,
+      "reply_rate": 0.651,
+      "urgent_rate": 0.0031,
+      "avg_body_length": 1210,
+      "peak_hours": [
+        7,
+        6,
+        9
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "brad.mckay@enron.com",
+      "name": "Brad Mckay",
+      "role": "receiver",
+      "team": 9,
+      "sent": 217,
+      "received": 2165,
+      "reply_rate": 0.737,
+      "urgent_rate": 0.0,
+      "avg_body_length": 410,
+      "peak_hours": [
+        8,
+        7,
+        4
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "judy.townsend@enron.com",
+      "name": "Judy Townsend",
+      "role": "receiver",
+      "team": 9,
+      "sent": 161,
+      "received": 2451,
+      "reply_rate": 0.081,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1492,
+      "peak_hours": [
+        3,
+        2,
+        6
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "sally.beck@enron.com",
+      "name": "Sally Beck",
+      "role": "lead",
+      "team": 10,
+      "sent": 4334,
+      "received": 6809,
+      "reply_rate": 0.434,
+      "urgent_rate": 0.0002,
+      "avg_body_length": 1513,
+      "peak_hours": [
+        10,
+        11,
+        9
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "leonardo.pacheco@enron.com",
+      "name": "Leonardo Pacheco",
+      "role": "member",
+      "team": 10,
+      "sent": 457,
+      "received": 609,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1024,
+      "peak_hours": [
+        9,
+        10,
+        8
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "patti.thompson@enron.com",
+      "name": "Patti Thompson",
+      "role": "connector",
+      "team": 10,
+      "sent": 350,
+      "received": 644,
+      "reply_rate": 0.389,
+      "urgent_rate": 0.0,
+      "avg_body_length": 783,
+      "peak_hours": [
+        9,
+        2,
+        6
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "shona.wilson@enron.com",
+      "name": "Shona Wilson",
+      "role": "receiver",
+      "team": 10,
+      "sent": 503,
+      "received": 1087,
+      "reply_rate": 0.225,
+      "urgent_rate": 0.002,
+      "avg_body_length": 2321,
+      "peak_hours": [
+        6,
+        9,
+        7
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "mike.jordan@enron.com",
+      "name": "Mike Jordan",
+      "role": "receiver",
+      "team": 10,
+      "sent": 212,
+      "received": 611,
+      "reply_rate": 0.33,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2565,
+      "peak_hours": [
+        7,
+        10,
+        6
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "brent.price@enron.com",
+      "name": "Brent Price",
+      "role": "receiver",
+      "team": 10,
+      "sent": 125,
+      "received": 1741,
+      "reply_rate": 0.28,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1672,
+      "peak_hours": [
+        1,
+        5,
+        3
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "lexi.elliott@enron.com",
+      "name": "Lexi Elliott",
+      "role": "member",
+      "team": 10,
+      "sent": 224,
+      "received": 181,
+      "reply_rate": 0.058,
+      "urgent_rate": 0.0,
+      "avg_body_length": 813,
+      "peak_hours": [
+        8,
+        4,
+        7
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "mary.solmonson@enron.com",
+      "name": "Mary Solmonson",
+      "role": "receiver",
+      "team": 10,
+      "sent": 223,
+      "received": 890,
+      "reply_rate": 0.157,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1469,
+      "peak_hours": [
+        5,
+        1,
+        10
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "beth.apollo@enron.com",
+      "name": "Beth Apollo",
+      "role": "receiver",
+      "team": 10,
+      "sent": 98,
+      "received": 902,
+      "reply_rate": 0.347,
+      "urgent_rate": 0.0102,
+      "avg_body_length": 1801,
+      "peak_hours": [
+        8,
+        6,
+        1
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "leslie.reeves@enron.com",
+      "name": "Leslie Reeves",
+      "role": "receiver",
+      "team": 10,
+      "sent": 59,
+      "received": 3484,
+      "reply_rate": 0.102,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1230,
+      "peak_hours": [
+        7,
+        10,
+        9
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "sheri.thomas@enron.com",
+      "name": "Sheri Thomas",
+      "role": "receiver",
+      "team": 10,
+      "sent": 215,
+      "received": 1615,
+      "reply_rate": 0.181,
+      "urgent_rate": 0.014,
+      "avg_body_length": 1666,
+      "peak_hours": [
+        2,
+        7,
+        5
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "kenneth.thibodeaux@enron.com",
+      "name": "Kenneth Thibodeaux",
+      "role": "member",
+      "team": 10,
+      "sent": 343,
+      "received": 245,
+      "reply_rate": 0.029,
+      "urgent_rate": 0.0,
+      "avg_body_length": 294,
+      "peak_hours": [
+        7,
+        12,
+        8
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "christi.nicolay@enron.com",
+      "name": "Christi Nicolay",
+      "role": "lead",
+      "team": 11,
+      "sent": 836,
+      "received": 2837,
+      "reply_rate": 0.17,
+      "urgent_rate": 0.0024,
+      "avg_body_length": 2247,
+      "peak_hours": [
+        8,
+        7,
+        4
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "joe.hartsoe@enron.com",
+      "name": "Joe Hartsoe",
+      "role": "receiver",
+      "team": 11,
+      "sent": 99,
+      "received": 5819,
+      "reply_rate": 0.212,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1149,
+      "peak_hours": [
+        9,
+        5,
+        7
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "steven.kean@enron.com",
+      "name": "Steven Kean",
+      "role": "receiver",
+      "team": 11,
+      "sent": 6220,
+      "received": 12659,
+      "reply_rate": 0.4,
+      "urgent_rate": 0.0018,
+      "avg_body_length": 2525,
+      "peak_hours": [
+        0,
+        6,
+        10
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "mary.hain@enron.com",
+      "name": "Mary Hain",
+      "role": "receiver",
+      "team": 11,
+      "sent": 1448,
+      "received": 3455,
+      "reply_rate": 0.258,
+      "urgent_rate": 0.0021,
+      "avg_body_length": 2197,
+      "peak_hours": [
+        6,
+        1,
+        2
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "kevin.presto@enron.com",
+      "name": "Kevin Presto",
+      "role": "receiver",
+      "team": 11,
+      "sent": 258,
+      "received": 2663,
+      "reply_rate": 0.55,
+      "urgent_rate": 0.0,
+      "avg_body_length": 764,
+      "peak_hours": [
+        11,
+        12,
+        16
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "jeff.brown@enron.com",
+      "name": "Jeff Brown",
+      "role": "receiver",
+      "team": 11,
+      "sent": 92,
+      "received": 926,
+      "reply_rate": 0.065,
+      "urgent_rate": 0.0,
+      "avg_body_length": 552,
+      "peak_hours": [
+        7,
+        9,
+        6
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "donna.fulton@enron.com",
+      "name": "Donna Fulton",
+      "role": "receiver",
+      "team": 11,
+      "sent": 122,
+      "received": 2469,
+      "reply_rate": 0.238,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2273,
+      "peak_hours": [
+        9,
+        7,
+        10
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "dave.mangskau@enron.com",
+      "name": "Dave Mangskau",
+      "role": "receiver",
+      "team": 11,
+      "sent": 1,
+      "received": 1166,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 300,
+      "peak_hours": [
+        12
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "kerry.stroup@enron.com",
+      "name": "Kerry Stroup",
+      "role": "receiver",
+      "team": 11,
+      "sent": 16,
+      "received": 1387,
+      "reply_rate": 0.688,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2876,
+      "peak_hours": [
+        2,
+        7,
+        5
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "lloyd.will@enron.com",
+      "name": "Lloyd Will",
+      "role": "receiver",
+      "team": 11,
+      "sent": 163,
+      "received": 2724,
+      "reply_rate": 0.356,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1549,
+      "peak_hours": [
+        10,
+        9,
+        13
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "steve.walton@enron.com",
+      "name": "Steve Walton",
+      "role": "receiver",
+      "team": 11,
+      "sent": 87,
+      "received": 2125,
+      "reply_rate": 0.793,
+      "urgent_rate": 0.0,
+      "avg_body_length": 4838,
+      "peak_hours": [
+        9,
+        8,
+        7
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "ozzie.pagan@enron.com",
+      "name": "Ozzie Pagan",
+      "role": "receiver",
+      "team": 11,
+      "sent": 10,
+      "received": 980,
+      "reply_rate": 0.2,
+      "urgent_rate": 0.0,
+      "avg_body_length": 3798,
+      "peak_hours": [
+        12,
+        7,
+        11
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "technology.enron@enron.com",
+      "name": "Technology Enron",
+      "role": "lead",
+      "team": 12,
+      "sent": 63,
+      "received": 0,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 3038,
+      "peak_hours": [
+        17,
+        18,
+        21
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "rudy.acevedo@enron.com",
+      "name": "Rudy Acevedo",
+      "role": "receiver",
+      "team": 12,
+      "sent": 9,
+      "received": 1835,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2233,
+      "peak_hours": [
+        1,
+        21,
+        5
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "dipak.agarwalla@enron.com",
+      "name": "Dipak Agarwalla",
+      "role": "receiver",
+      "team": 12,
+      "sent": 5,
+      "received": 363,
+      "reply_rate": 0.2,
+      "urgent_rate": 0.0,
+      "avg_body_length": 397,
+      "peak_hours": [
+        6,
+        10,
+        5
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "anubhav.aggarwal@enron.com",
+      "name": "Anubhav Aggarwal",
+      "role": "receiver",
+      "team": 12,
+      "sent": 0,
+      "received": 568,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "kim.alexander@enron.com",
+      "name": "Kim Alexander",
+      "role": "receiver",
+      "team": 12,
+      "sent": 0,
+      "received": 127,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "diana.allen@enron.com",
+      "name": "Diana Allen",
+      "role": "receiver",
+      "team": 12,
+      "sent": 0,
+      "received": 1608,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "k..allen@enron.com",
+      "name": "K  Allen",
+      "role": "receiver",
+      "team": 12,
+      "sent": 316,
+      "received": 1998,
+      "reply_rate": 0.364,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1291,
+      "peak_hours": [
+        12,
+        13,
+        7
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "chuck.ames@enron.com",
+      "name": "Chuck Ames",
+      "role": "receiver",
+      "team": 12,
+      "sent": 12,
+      "received": 1421,
+      "reply_rate": 0.083,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1377,
+      "peak_hours": [
+        12,
+        3,
+        13
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "d..anderson@enron.com",
+      "name": "D  Anderson",
+      "role": "receiver",
+      "team": 12,
+      "sent": 0,
+      "received": 75,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "harry.arora@enron.com",
+      "name": "Harry Arora",
+      "role": "receiver",
+      "team": 12,
+      "sent": 108,
+      "received": 1515,
+      "reply_rate": 0.546,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1248,
+      "peak_hours": [
+        9,
+        10,
+        11
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "debra.bailey@enron.com",
+      "name": "Debra Bailey",
+      "role": "receiver",
+      "team": 12,
+      "sent": 40,
+      "received": 805,
+      "reply_rate": 0.025,
+      "urgent_rate": 0.0,
+      "avg_body_length": 874,
+      "peak_hours": [
+        8,
+        13,
+        12
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "bilal.bajwa@enron.com",
+      "name": "Bilal Bajwa",
+      "role": "receiver",
+      "team": 12,
+      "sent": 21,
+      "received": 663,
+      "reply_rate": 0.19,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1255,
+      "peak_hours": [
+        5,
+        6,
+        9
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "kay.mann@enron.com",
+      "name": "Kay Mann",
+      "role": "lead",
+      "team": 13,
+      "sent": 16721,
+      "received": 4638,
+      "reply_rate": 0.487,
+      "urgent_rate": 0.0005,
+      "avg_body_length": 1202,
+      "peak_hours": [
+        1,
+        3,
+        2
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "suzanne.adams@enron.com",
+      "name": "Suzanne Adams",
+      "role": "receiver",
+      "team": 13,
+      "sent": 327,
+      "received": 2874,
+      "reply_rate": 0.599,
+      "urgent_rate": 0.0,
+      "avg_body_length": 840,
+      "peak_hours": [
+        2,
+        7,
+        3
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "ben.jacoby@enron.com",
+      "name": "Ben Jacoby",
+      "role": "receiver",
+      "team": 13,
+      "sent": 579,
+      "received": 2168,
+      "reply_rate": 0.534,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1371,
+      "peak_hours": [
+        9,
+        4,
+        12
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "kathleen.carnahan@enron.com",
+      "name": "Kathleen Carnahan",
+      "role": "receiver",
+      "team": 13,
+      "sent": 246,
+      "received": 1760,
+      "reply_rate": 0.484,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1391,
+      "peak_hours": [
+        9,
+        7,
+        2
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "carlos.sole@enron.com",
+      "name": "Carlos Sole",
+      "role": "receiver",
+      "team": 13,
+      "sent": 93,
+      "received": 1329,
+      "reply_rate": 0.366,
+      "urgent_rate": 0.0,
+      "avg_body_length": 3029,
+      "peak_hours": [
+        6,
+        7,
+        11
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "sheila.tweed@enron.com",
+      "name": "Sheila Tweed",
+      "role": "receiver",
+      "team": 13,
+      "sent": 134,
+      "received": 2489,
+      "reply_rate": 0.366,
+      "urgent_rate": 0.0373,
+      "avg_body_length": 1687,
+      "peak_hours": [
+        9,
+        2,
+        10
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "reagan.rorschach@enron.com",
+      "name": "Reagan Rorschach",
+      "role": "receiver",
+      "team": 13,
+      "sent": 311,
+      "received": 1181,
+      "reply_rate": 0.37,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1392,
+      "peak_hours": [
+        4,
+        3,
+        1
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "roseann.engeldorf@enron.com",
+      "name": "Roseann Engeldorf",
+      "role": "receiver",
+      "team": 13,
+      "sent": 134,
+      "received": 1114,
+      "reply_rate": 0.269,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1634,
+      "peak_hours": [
+        7,
+        5,
+        6
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "heather.kroll@enron.com",
+      "name": "Heather Kroll",
+      "role": "receiver",
+      "team": 13,
+      "sent": 161,
+      "received": 1146,
+      "reply_rate": 0.255,
+      "urgent_rate": 0.0,
+      "avg_body_length": 739,
+      "peak_hours": [
+        12,
+        8,
+        9
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "lisa.bills@enron.com",
+      "name": "Lisa Bills",
+      "role": "receiver",
+      "team": 13,
+      "sent": 66,
+      "received": 683,
+      "reply_rate": 0.485,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1892,
+      "peak_hours": [
+        14,
+        10,
+        11
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "gregg.penman@enron.com",
+      "name": "Gregg Penman",
+      "role": "receiver",
+      "team": 13,
+      "sent": 195,
+      "received": 945,
+      "reply_rate": 0.205,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1074,
+      "peak_hours": [
+        7,
+        3,
+        2
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "fred.mitro@enron.com",
+      "name": "Fred Mitro",
+      "role": "receiver",
+      "team": 13,
+      "sent": 141,
+      "received": 782,
+      "reply_rate": 0.284,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1600,
+      "peak_hours": [
+        10,
+        6,
+        7
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "bob.ambrocik@enron.com",
+      "name": "Bob Ambrocik",
+      "role": "lead",
+      "team": 14,
+      "sent": 23,
+      "received": 5,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 835,
+      "peak_hours": [
+        15,
+        8,
+        10
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "aaron.adams@enron.com",
+      "name": "Aaron Adams",
+      "role": "receiver",
+      "team": 14,
+      "sent": 0,
+      "received": 51,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "ana.agudelo@enron.com",
+      "name": "Ana Agudelo",
+      "role": "receiver",
+      "team": 14,
+      "sent": 0,
+      "received": 23,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "billie.akhave@enron.com",
+      "name": "Billie Akhave",
+      "role": "receiver",
+      "team": 14,
+      "sent": 2,
+      "received": 59,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 142,
+      "peak_hours": [
+        12,
+        8
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "bridgette.anderson@enron.com",
+      "name": "Bridgette Anderson",
+      "role": "receiver",
+      "team": 14,
+      "sent": 17,
+      "received": 874,
+      "reply_rate": 0.588,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1347,
+      "peak_hours": [
+        5,
+        1,
+        4
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "aaron.armstrong@enron.com",
+      "name": "Aaron Armstrong",
+      "role": "receiver",
+      "team": 14,
+      "sent": 6,
+      "received": 109,
+      "reply_rate": 1.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1235,
+      "peak_hours": [
+        8,
+        4,
+        9
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "bryan.aubuchon@enron.com",
+      "name": "Bryan Aubuchon",
+      "role": "receiver",
+      "team": 14,
+      "sent": 0,
+      "received": 29,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "c..aucoin@enron.com",
+      "name": "C  Aucoin",
+      "role": "receiver",
+      "team": 14,
+      "sent": 8,
+      "received": 553,
+      "reply_rate": 0.5,
+      "urgent_rate": 0.0,
+      "avg_body_length": 990,
+      "peak_hours": [
+        9,
+        19,
+        13
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "ashraf.ayyat@enron.com",
+      "name": "Ashraf Ayyat",
+      "role": "receiver",
+      "team": 14,
+      "sent": 0,
+      "received": 23,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "briant.baker@enron.com",
+      "name": "Briant Baker",
+      "role": "receiver",
+      "team": 14,
+      "sent": 10,
+      "received": 358,
+      "reply_rate": 1.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 258,
+      "peak_hours": [
+        4,
+        0,
+        11
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "arun.balasundaram@enron.com",
+      "name": "Arun Balasundaram",
+      "role": "receiver",
+      "team": 14,
+      "sent": 5,
+      "received": 201,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 856,
+      "peak_hours": [
+        21,
+        10,
+        13
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "andres.balmaceda@enron.com",
+      "name": "Andres Balmaceda",
+      "role": "receiver",
+      "team": 14,
+      "sent": 0,
+      "received": 301,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "julie.clyatt@enron.com",
+      "name": "Julie Clyatt",
+      "role": "lead",
+      "team": 15,
+      "sent": 135,
+      "received": 235,
+      "reply_rate": 0.022,
+      "urgent_rate": 0.2667,
+      "avg_body_length": 889,
+      "peak_hours": [
+        9,
+        8,
+        7
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "neil.davies@enron.com",
+      "name": "Neil Davies",
+      "role": "receiver",
+      "team": 15,
+      "sent": 92,
+      "received": 280,
+      "reply_rate": 0.043,
+      "urgent_rate": 0.0,
+      "avg_body_length": 673,
+      "peak_hours": [
+        14,
+        13,
+        1
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "david.oxley@enron.com",
+      "name": "David Oxley",
+      "role": "receiver",
+      "team": 15,
+      "sent": 362,
+      "received": 1674,
+      "reply_rate": 0.39,
+      "urgent_rate": 0.0663,
+      "avg_body_length": 1417,
+      "peak_hours": [
+        15,
+        14,
+        11
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": ".williams@enron.com",
+      "name": " Williams",
+      "role": "receiver",
+      "team": 15,
+      "sent": 114,
+      "received": 2152,
+      "reply_rate": 0.333,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1286,
+      "peak_hours": [
+        7,
+        9,
+        13
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "tammie.schoppe@enron.com",
+      "name": "Tammie Schoppe",
+      "role": "receiver",
+      "team": 15,
+      "sent": 179,
+      "received": 1416,
+      "reply_rate": 0.095,
+      "urgent_rate": 0.2346,
+      "avg_body_length": 695,
+      "peak_hours": [
+        19,
+        6,
+        15
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "daniel.muschar@enron.com",
+      "name": "Daniel Muschar",
+      "role": "receiver",
+      "team": 15,
+      "sent": 40,
+      "received": 195,
+      "reply_rate": 0.2,
+      "urgent_rate": 0.025,
+      "avg_body_length": 1140,
+      "peak_hours": [
+        7,
+        13,
+        4
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "rourke@enron.com",
+      "name": "Rourke",
+      "role": "receiver",
+      "team": 15,
+      "sent": 114,
+      "received": 860,
+      "reply_rate": 0.079,
+      "urgent_rate": 0.0,
+      "avg_body_length": 390,
+      "peak_hours": [
+        13,
+        5,
+        18
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "paige.cox@enron.com",
+      "name": "Paige Cox",
+      "role": "receiver",
+      "team": 15,
+      "sent": 10,
+      "received": 205,
+      "reply_rate": 0.5,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1276,
+      "peak_hours": [
+        12,
+        10,
+        14
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "kari.oquinn@enron.com",
+      "name": "Kari Oquinn",
+      "role": "receiver",
+      "team": 15,
+      "sent": 9,
+      "received": 197,
+      "reply_rate": 0.333,
+      "urgent_rate": 0.1111,
+      "avg_body_length": 521,
+      "peak_hours": [
+        14,
+        16,
+        17
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "amy.fitzpatrick@enron.com",
+      "name": "Amy Fitzpatrick",
+      "role": "member",
+      "team": 15,
+      "sent": 446,
+      "received": 588,
+      "reply_rate": 0.119,
+      "urgent_rate": 0.0157,
+      "avg_body_length": 1105,
+      "peak_hours": [
+        1,
+        7,
+        9
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "jeanie.slone@enron.com",
+      "name": "Jeanie Slone",
+      "role": "receiver",
+      "team": 15,
+      "sent": 67,
+      "received": 566,
+      "reply_rate": 0.313,
+      "urgent_rate": 0.0,
+      "avg_body_length": 537,
+      "peak_hours": [
+        14,
+        11,
+        9
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "karen.buckley@enron.com",
+      "name": "Karen Buckley",
+      "role": "member",
+      "team": 15,
+      "sent": 280,
+      "received": 328,
+      "reply_rate": 0.15,
+      "urgent_rate": 0.05,
+      "avg_body_length": 579,
+      "peak_hours": [
+        11,
+        12,
+        16
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "janet.butler@enron.com",
+      "name": "Janet Butler",
+      "role": "lead",
+      "team": 16,
+      "sent": 235,
+      "received": 612,
+      "reply_rate": 0.047,
+      "urgent_rate": 0.0,
+      "avg_body_length": 801,
+      "peak_hours": [
+        8,
+        7,
+        9
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "miyung.buster@enron.com",
+      "name": "Miyung Buster",
+      "role": "broadcaster",
+      "team": 16,
+      "sent": 644,
+      "received": 256,
+      "reply_rate": 0.009,
+      "urgent_rate": 0.0,
+      "avg_body_length": 36951,
+      "peak_hours": [
+        3,
+        2,
+        4
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "shelley.corman@enron.com",
+      "name": "Shelley Corman",
+      "role": "receiver",
+      "team": 16,
+      "sent": 928,
+      "received": 3218,
+      "reply_rate": 0.408,
+      "urgent_rate": 0.0065,
+      "avg_body_length": 1246,
+      "peak_hours": [
+        6,
+        8,
+        7
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "rod.hayslett@enron.com",
+      "name": "Rod Hayslett",
+      "role": "receiver",
+      "team": 16,
+      "sent": 989,
+      "received": 2551,
+      "reply_rate": 0.542,
+      "urgent_rate": 0.001,
+      "avg_body_length": 1182,
+      "peak_hours": [
+        5,
+        8,
+        9
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "denis.tu@enron.com",
+      "name": "Denis Tu",
+      "role": "receiver",
+      "team": 16,
+      "sent": 30,
+      "received": 355,
+      "reply_rate": 0.3,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1397,
+      "peak_hours": [
+        5,
+        7,
+        12
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "nancy.bagot@enron.com",
+      "name": "Nancy Bagot",
+      "role": "receiver",
+      "team": 16,
+      "sent": 39,
+      "received": 251,
+      "reply_rate": 0.026,
+      "urgent_rate": 0.0,
+      "avg_body_length": 3734,
+      "peak_hours": [
+        15,
+        10,
+        12
+      ],
+      "in_cluster_links": 10
+    },
+    {
+      "email": "stanley.horton@enron.com",
+      "name": "Stanley Horton",
+      "role": "receiver",
+      "team": 16,
+      "sent": 1072,
+      "received": 2218,
+      "reply_rate": 0.799,
+      "urgent_rate": 0.0,
+      "avg_body_length": 843,
+      "peak_hours": [
+        0,
+        1,
+        5
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "robert.kilmer@enron.com",
+      "name": "Robert Kilmer",
+      "role": "receiver",
+      "team": 16,
+      "sent": 24,
+      "received": 910,
+      "reply_rate": 0.375,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1309,
+      "peak_hours": [
+        10,
+        5,
+        7
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "frazier.king@enron.com",
+      "name": "Frazier King",
+      "role": "receiver",
+      "team": 16,
+      "sent": 84,
+      "received": 669,
+      "reply_rate": 0.298,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1536,
+      "peak_hours": [
+        8,
+        6,
+        13
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "drew.fossum@enron.com",
+      "name": "Drew Fossum",
+      "role": "broadcaster",
+      "team": 16,
+      "sent": 3693,
+      "received": 1927,
+      "reply_rate": 0.475,
+      "urgent_rate": 0.0011,
+      "avg_body_length": 1687,
+      "peak_hours": [
+        3,
+        9,
+        2
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "teb.lokey@enron.com",
+      "name": "Teb Lokey",
+      "role": "receiver",
+      "team": 16,
+      "sent": 155,
+      "received": 1101,
+      "reply_rate": 0.581,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1645,
+      "peak_hours": [
+        12,
+        7,
+        11
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "bambi.heckerman@enron.com",
+      "name": "Bambi Heckerman",
+      "role": "receiver",
+      "team": 16,
+      "sent": 5,
+      "received": 306,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1044,
+      "peak_hours": [
+        4,
+        14,
+        12
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "rosalee.fleming@enron.com",
+      "name": "Rosalee Fleming",
+      "role": "lead",
+      "team": 17,
+      "sent": 1116,
+      "received": 708,
+      "reply_rate": 0.59,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1774,
+      "peak_hours": [
+        10,
+        6,
+        9
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "katherine.brown@enron.com",
+      "name": "Katherine Brown",
+      "role": "receiver",
+      "team": 17,
+      "sent": 156,
+      "received": 364,
+      "reply_rate": 0.276,
+      "urgent_rate": 0.0,
+      "avg_body_length": 663,
+      "peak_hours": [
+        6,
+        4,
+        0
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "kenneth.lay@enron.com",
+      "name": "Kenneth Lay",
+      "role": "receiver",
+      "team": 17,
+      "sent": 36,
+      "received": 3349,
+      "reply_rate": 0.25,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1861,
+      "peak_hours": [
+        11,
+        13,
+        14
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "rick.buy@enron.com",
+      "name": "Rick Buy",
+      "role": "receiver",
+      "team": 17,
+      "sent": 1046,
+      "received": 3277,
+      "reply_rate": 0.523,
+      "urgent_rate": 0.001,
+      "avg_body_length": 863,
+      "peak_hours": [
+        6,
+        0,
+        7
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "james.derrick@enron.com",
+      "name": "James Derrick",
+      "role": "receiver",
+      "team": 17,
+      "sent": 771,
+      "received": 2018,
+      "reply_rate": 0.377,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1688,
+      "peak_hours": [
+        9,
+        8,
+        11
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "mark.koenig@enron.com",
+      "name": "Mark Koenig",
+      "role": "receiver",
+      "team": 17,
+      "sent": 61,
+      "received": 2343,
+      "reply_rate": 0.082,
+      "urgent_rate": 0.0,
+      "avg_body_length": 3530,
+      "peak_hours": [
+        8,
+        3,
+        2
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "jeffrey.mcmahon@enron.com",
+      "name": "Jeffrey Mcmahon",
+      "role": "receiver",
+      "team": 17,
+      "sent": 45,
+      "received": 2322,
+      "reply_rate": 0.333,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1836,
+      "peak_hours": [
+        9,
+        2,
+        13
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "raymond.bowen@enron.com",
+      "name": "Raymond Bowen",
+      "role": "receiver",
+      "team": 17,
+      "sent": 27,
+      "received": 1837,
+      "reply_rate": 0.667,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1443,
+      "peak_hours": [
+        13,
+        5,
+        10
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "richard.causey@enron.com",
+      "name": "Richard Causey",
+      "role": "receiver",
+      "team": 17,
+      "sent": 49,
+      "received": 1873,
+      "reply_rate": 0.612,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2627,
+      "peak_hours": [
+        9,
+        6,
+        7
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "jim.fallon@enron.com",
+      "name": "Jim Fallon",
+      "role": "receiver",
+      "team": 17,
+      "sent": 75,
+      "received": 1729,
+      "reply_rate": 0.24,
+      "urgent_rate": 0.0,
+      "avg_body_length": 810,
+      "peak_hours": [
+        11,
+        6,
+        8
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "john.sherriff@enron.com",
+      "name": "John Sherriff",
+      "role": "receiver",
+      "team": 17,
+      "sent": 89,
+      "received": 3180,
+      "reply_rate": 0.427,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2556,
+      "peak_hours": [
+        23,
+        6,
+        11
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "mike.mcconnell@enron.com",
+      "name": "Mike Mcconnell",
+      "role": "connector",
+      "team": 17,
+      "sent": 2739,
+      "received": 3205,
+      "reply_rate": 0.516,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1368,
+      "peak_hours": [
+        5,
+        0,
+        1
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "taffy.milligan@enron.com",
+      "name": "Taffy Milligan",
+      "role": "lead",
+      "team": 18,
+      "sent": 440,
+      "received": 1456,
+      "reply_rate": 0.095,
+      "urgent_rate": 0.0136,
+      "avg_body_length": 469,
+      "peak_hours": [
+        3,
+        2,
+        9
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "susan.bailey@enron.com",
+      "name": "Susan Bailey",
+      "role": "receiver",
+      "team": 18,
+      "sent": 335,
+      "received": 4920,
+      "reply_rate": 0.278,
+      "urgent_rate": 0.0,
+      "avg_body_length": 941,
+      "peak_hours": [
+        7,
+        10,
+        11
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "robert.bruce@enron.com",
+      "name": "Robert Bruce",
+      "role": "receiver",
+      "team": 18,
+      "sent": 308,
+      "received": 2286,
+      "reply_rate": 0.179,
+      "urgent_rate": 0.0,
+      "avg_body_length": 877,
+      "peak_hours": [
+        4,
+        3,
+        6
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "brent.hendry@enron.com",
+      "name": "Brent Hendry",
+      "role": "receiver",
+      "team": 18,
+      "sent": 343,
+      "received": 3930,
+      "reply_rate": 0.394,
+      "urgent_rate": 0.0058,
+      "avg_body_length": 1482,
+      "peak_hours": [
+        9,
+        7,
+        3
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "mary.cook@enron.com",
+      "name": "Mary Cook",
+      "role": "receiver",
+      "team": 18,
+      "sent": 898,
+      "received": 4138,
+      "reply_rate": 0.161,
+      "urgent_rate": 0.0033,
+      "avg_body_length": 980,
+      "peak_hours": [
+        1,
+        7,
+        10
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "susan.flynn@enron.com",
+      "name": "Susan Flynn",
+      "role": "receiver",
+      "team": 18,
+      "sent": 148,
+      "received": 1549,
+      "reply_rate": 0.081,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1483,
+      "peak_hours": [
+        4,
+        3,
+        7
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "samantha.boyd@enron.com",
+      "name": "Samantha Boyd",
+      "role": "receiver",
+      "team": 18,
+      "sent": 267,
+      "received": 3070,
+      "reply_rate": 0.135,
+      "urgent_rate": 0.0,
+      "avg_body_length": 747,
+      "peak_hours": [
+        8,
+        7,
+        6
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "deb.korkmas@enron.com",
+      "name": "Deb Korkmas",
+      "role": "receiver",
+      "team": 18,
+      "sent": 103,
+      "received": 1149,
+      "reply_rate": 0.175,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1533,
+      "peak_hours": [
+        8,
+        2,
+        3
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "ann.white@enron.com",
+      "name": "Ann White",
+      "role": "receiver",
+      "team": 18,
+      "sent": 38,
+      "received": 1523,
+      "reply_rate": 0.237,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2275,
+      "peak_hours": [
+        9,
+        4,
+        10
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "laurie.mayer@enron.com",
+      "name": "Laurie Mayer",
+      "role": "receiver",
+      "team": 18,
+      "sent": 25,
+      "received": 1023,
+      "reply_rate": 0.16,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1073,
+      "peak_hours": [
+        7,
+        3,
+        1
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "anne.koehler@enron.com",
+      "name": "Anne Koehler",
+      "role": "receiver",
+      "team": 18,
+      "sent": 35,
+      "received": 1592,
+      "reply_rate": 0.343,
+      "urgent_rate": 0.0571,
+      "avg_body_length": 1592,
+      "peak_hours": [
+        10,
+        9,
+        8
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "holly.keiser@enron.com",
+      "name": "Holly Keiser",
+      "role": "receiver",
+      "team": 18,
+      "sent": 248,
+      "received": 835,
+      "reply_rate": 0.065,
+      "urgent_rate": 0.0,
+      "avg_body_length": 456,
+      "peak_hours": [
+        8,
+        7,
+        12
+      ],
+      "in_cluster_links": 10
+    },
+    {
+      "email": "tamara.black@enron.com",
+      "name": "Tamara Black",
+      "role": "lead",
+      "team": 19,
+      "sent": 168,
+      "received": 253,
+      "reply_rate": 0.054,
+      "urgent_rate": 0.0179,
+      "avg_body_length": 1941,
+      "peak_hours": [
+        9,
+        3,
+        0
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "chris.dorland@enron.com",
+      "name": "Chris Dorland",
+      "role": "member",
+      "team": 19,
+      "sent": 1824,
+      "received": 1387,
+      "reply_rate": 0.413,
+      "urgent_rate": 0.0022,
+      "avg_body_length": 630,
+      "peak_hours": [
+        8,
+        7,
+        5
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "kayne.coulter@enron.com",
+      "name": "Kayne Coulter",
+      "role": "receiver",
+      "team": 19,
+      "sent": 381,
+      "received": 2234,
+      "reply_rate": 0.113,
+      "urgent_rate": 0.0157,
+      "avg_body_length": 1172,
+      "peak_hours": [
+        1,
+        4,
+        8
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "juan.hernandez@enron.com",
+      "name": "Juan Hernandez",
+      "role": "receiver",
+      "team": 19,
+      "sent": 351,
+      "received": 2490,
+      "reply_rate": 0.285,
+      "urgent_rate": 0.0,
+      "avg_body_length": 777,
+      "peak_hours": [
+        23,
+        6,
+        7
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "larry.campbell@enron.com",
+      "name": "Larry Campbell",
+      "role": "member",
+      "team": 19,
+      "sent": 1377,
+      "received": 2078,
+      "reply_rate": 0.314,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1451,
+      "peak_hours": [
+        9,
+        4,
+        8
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "clint.dean@enron.com",
+      "name": "Clint Dean",
+      "role": "receiver",
+      "team": 19,
+      "sent": 101,
+      "received": 2020,
+      "reply_rate": 0.465,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2000,
+      "peak_hours": [
+        9,
+        10,
+        8
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "patrick.hanse@enron.com",
+      "name": "Patrick Hanse",
+      "role": "receiver",
+      "team": 19,
+      "sent": 25,
+      "received": 2536,
+      "reply_rate": 0.08,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1416,
+      "peak_hours": [
+        5,
+        8,
+        1
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "larry.jester@enron.com",
+      "name": "Larry Jester",
+      "role": "receiver",
+      "team": 19,
+      "sent": 36,
+      "received": 1633,
+      "reply_rate": 0.028,
+      "urgent_rate": 0.0,
+      "avg_body_length": 562,
+      "peak_hours": [
+        4,
+        9,
+        5
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "tom.may@enron.com",
+      "name": "Tom May",
+      "role": "receiver",
+      "team": 19,
+      "sent": 93,
+      "received": 2291,
+      "reply_rate": 0.495,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2339,
+      "peak_hours": [
+        8,
+        7,
+        6
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "jeffrey.miller@enron.com",
+      "name": "Jeffrey Miller",
+      "role": "receiver",
+      "team": 19,
+      "sent": 40,
+      "received": 2251,
+      "reply_rate": 0.025,
+      "urgent_rate": 0.0,
+      "avg_body_length": 751,
+      "peak_hours": [
+        6,
+        13,
+        12
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "juan.padron@enron.com",
+      "name": "Juan Padron",
+      "role": "receiver",
+      "team": 19,
+      "sent": 22,
+      "received": 2134,
+      "reply_rate": 0.045,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1152,
+      "peak_hours": [
+        7,
+        2,
+        21
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "jeff.king@enron.com",
+      "name": "Jeff King",
+      "role": "receiver",
+      "team": 19,
+      "sent": 32,
+      "received": 2382,
+      "reply_rate": 0.469,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1791,
+      "peak_hours": [
+        2,
+        8,
+        11
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "vince.kaminski@enron.com",
+      "name": "Vince Kaminski",
+      "role": "lead",
+      "team": 20,
+      "sent": 14329,
+      "received": 4255,
+      "reply_rate": 0.441,
+      "urgent_rate": 0.0008,
+      "avg_body_length": 1489,
+      "peak_hours": [
+        9,
+        1,
+        8
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "shirley.crenshaw@enron.com",
+      "name": "Shirley Crenshaw",
+      "role": "connector",
+      "team": 20,
+      "sent": 934,
+      "received": 1817,
+      "reply_rate": 0.26,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1157,
+      "peak_hours": [
+        1,
+        2,
+        0
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "stinson.gibner@enron.com",
+      "name": "Stinson Gibner",
+      "role": "receiver",
+      "team": 20,
+      "sent": 341,
+      "received": 1323,
+      "reply_rate": 0.331,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1052,
+      "peak_hours": [
+        8,
+        3,
+        7
+      ],
+      "in_cluster_links": 10
+    },
+    {
+      "email": "mike.roberts@enron.com",
+      "name": "Mike Roberts",
+      "role": "receiver",
+      "team": 20,
+      "sent": 135,
+      "received": 785,
+      "reply_rate": 0.17,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1519,
+      "peak_hours": [
+        8,
+        3,
+        7
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "vasant.shanbhogue@enron.com",
+      "name": "Vasant Shanbhogue",
+      "role": "receiver",
+      "team": 20,
+      "sent": 114,
+      "received": 797,
+      "reply_rate": 0.377,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1457,
+      "peak_hours": [
+        7,
+        9,
+        1
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "steven.leppard@enron.com",
+      "name": "Steven Leppard",
+      "role": "member",
+      "team": 20,
+      "sent": 133,
+      "received": 252,
+      "reply_rate": 0.278,
+      "urgent_rate": 0.0226,
+      "avg_body_length": 976,
+      "peak_hours": [
+        9,
+        1,
+        10
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "kevin.moore@enron.com",
+      "name": "Kevin Moore",
+      "role": "member",
+      "team": 20,
+      "sent": 196,
+      "received": 372,
+      "reply_rate": 0.383,
+      "urgent_rate": 0.0,
+      "avg_body_length": 980,
+      "peak_hours": [
+        2,
+        3,
+        0
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "zimin.lu@enron.com",
+      "name": "Zimin Lu",
+      "role": "connector",
+      "team": 20,
+      "sent": 384,
+      "received": 600,
+      "reply_rate": 0.219,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1024,
+      "peak_hours": [
+        8,
+        7,
+        3
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "molly.magee@enron.com",
+      "name": "Molly Magee",
+      "role": "receiver",
+      "team": 20,
+      "sent": 120,
+      "received": 276,
+      "reply_rate": 0.525,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1096,
+      "peak_hours": [
+        2,
+        6,
+        8
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "grant.masson@enron.com",
+      "name": "Grant Masson",
+      "role": "receiver",
+      "team": 20,
+      "sent": 79,
+      "received": 507,
+      "reply_rate": 0.354,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1310,
+      "peak_hours": [
+        2,
+        1,
+        4
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "pinnamaneni.krishnarao@enron.com",
+      "name": "Pinnamaneni Krishnarao",
+      "role": "receiver",
+      "team": 20,
+      "sent": 125,
+      "received": 538,
+      "reply_rate": 0.328,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1630,
+      "peak_hours": [
+        5,
+        3,
+        8
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "christie.patrick@enron.com",
+      "name": "Christie Patrick",
+      "role": "receiver",
+      "team": 20,
+      "sent": 204,
+      "received": 427,
+      "reply_rate": 0.216,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1873,
+      "peak_hours": [
+        8,
+        9,
+        3
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "tim.belden@enron.com",
+      "name": "Tim Belden",
+      "role": "lead",
+      "team": 21,
+      "sent": 480,
+      "received": 7636,
+      "reply_rate": 0.148,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1537,
+      "peak_hours": [
+        8,
+        12,
+        15
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "carla.hoffman@enron.com",
+      "name": "Carla Hoffman",
+      "role": "receiver",
+      "team": 21,
+      "sent": 202,
+      "received": 1339,
+      "reply_rate": 0.035,
+      "urgent_rate": 0.0,
+      "avg_body_length": 3065,
+      "peak_hours": [
+        22,
+        6,
+        1
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "kay.chapman@enron.com",
+      "name": "Kay Chapman",
+      "role": "member",
+      "team": 21,
+      "sent": 460,
+      "received": 771,
+      "reply_rate": 0.172,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1310,
+      "peak_hours": [
+        6,
+        10,
+        1
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "ray.alvarez@enron.com",
+      "name": "Ray Alvarez",
+      "role": "receiver",
+      "team": 21,
+      "sent": 261,
+      "received": 1711,
+      "reply_rate": 0.23,
+      "urgent_rate": 0.0,
+      "avg_body_length": 3018,
+      "peak_hours": [
+        8,
+        11,
+        9
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "robert.badeer@enron.com",
+      "name": "Robert Badeer",
+      "role": "receiver",
+      "team": 21,
+      "sent": 149,
+      "received": 3657,
+      "reply_rate": 0.356,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1216,
+      "peak_hours": [
+        7,
+        6,
+        2
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "kysa.alport@enron.com",
+      "name": "Kysa Alport",
+      "role": "receiver",
+      "team": 21,
+      "sent": 153,
+      "received": 324,
+      "reply_rate": 0.013,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2501,
+      "peak_hours": [
+        16,
+        18,
+        19
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "david.delainey@enron.com",
+      "name": "David Delainey",
+      "role": "member",
+      "team": 21,
+      "sent": 3050,
+      "received": 3083,
+      "reply_rate": 0.257,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1560,
+      "peak_hours": [
+        11,
+        2,
+        3
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "center.dl-portland@enron.com",
+      "name": "Center Dl-Portland",
+      "role": "receiver",
+      "team": 21,
+      "sent": 0,
+      "received": 672,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9,
+        10,
+        14
+      ],
+      "in_cluster_links": 1
+    },
+    {
+      "email": "sean.crandall@enron.com",
+      "name": "Sean Crandall",
+      "role": "receiver",
+      "team": 21,
+      "sent": 166,
+      "received": 2182,
+      "reply_rate": 0.512,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2492,
+      "peak_hours": [
+        11,
+        15,
+        19
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "mark.fischer@enron.com",
+      "name": "Mark Fischer",
+      "role": "receiver",
+      "team": 21,
+      "sent": 54,
+      "received": 1906,
+      "reply_rate": 0.074,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1302,
+      "peak_hours": [
+        10,
+        13,
+        11
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "mike.swerzbin@enron.com",
+      "name": "Mike Swerzbin",
+      "role": "receiver",
+      "team": 21,
+      "sent": 74,
+      "received": 2268,
+      "reply_rate": 0.257,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1377,
+      "peak_hours": [
+        17,
+        12,
+        16
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "jeff.richter@enron.com",
+      "name": "Jeff Richter",
+      "role": "receiver",
+      "team": 21,
+      "sent": 22,
+      "received": 3275,
+      "reply_rate": 0.182,
+      "urgent_rate": 0.0,
+      "avg_body_length": 823,
+      "peak_hours": [
+        2,
+        7,
+        15
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "eric.bass@enron.com",
+      "name": "Eric Bass",
+      "role": "lead",
+      "team": 22,
+      "sent": 5154,
+      "received": 2388,
+      "reply_rate": 0.481,
+      "urgent_rate": 0.0,
+      "avg_body_length": 913,
+      "peak_hours": [
+        1,
+        3,
+        2
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "matthew.lenhart@enron.com",
+      "name": "Matthew Lenhart",
+      "role": "broadcaster",
+      "team": 22,
+      "sent": 5256,
+      "received": 3136,
+      "reply_rate": 0.749,
+      "urgent_rate": 0.0,
+      "avg_body_length": 656,
+      "peak_hours": [
+        3,
+        5,
+        6
+      ],
+      "in_cluster_links": 10
+    },
+    {
+      "email": "bryan.hull@enron.com",
+      "name": "Bryan Hull",
+      "role": "receiver",
+      "team": 22,
+      "sent": 132,
+      "received": 2552,
+      "reply_rate": 0.129,
+      "urgent_rate": 0.0,
+      "avg_body_length": 528,
+      "peak_hours": [
+        8,
+        6,
+        2
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "shanna.husser@enron.com",
+      "name": "Shanna Husser",
+      "role": "receiver",
+      "team": 22,
+      "sent": 128,
+      "received": 753,
+      "reply_rate": 0.25,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1700,
+      "peak_hours": [
+        0,
+        2,
+        5
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "timothy.blanchard@enron.com",
+      "name": "Timothy Blanchard",
+      "role": "receiver",
+      "team": 22,
+      "sent": 37,
+      "received": 1080,
+      "reply_rate": 0.486,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1099,
+      "peak_hours": [
+        6,
+        7,
+        8
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "david.baumbach@enron.com",
+      "name": "David Baumbach",
+      "role": "receiver",
+      "team": 22,
+      "sent": 211,
+      "received": 2473,
+      "reply_rate": 0.275,
+      "urgent_rate": 0.0,
+      "avg_body_length": 677,
+      "peak_hours": [
+        6,
+        7,
+        0
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "phillip.love@enron.com",
+      "name": "Phillip Love",
+      "role": "broadcaster",
+      "team": 22,
+      "sent": 3107,
+      "received": 1345,
+      "reply_rate": 0.482,
+      "urgent_rate": 0.0,
+      "avg_body_length": 662,
+      "peak_hours": [
+        1,
+        2,
+        3
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "brian.hoskins@enron.com",
+      "name": "Brian Hoskins",
+      "role": "receiver",
+      "team": 22,
+      "sent": 106,
+      "received": 809,
+      "reply_rate": 0.17,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1160,
+      "peak_hours": [
+        1,
+        8,
+        9
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "neal.winfree@enron.com",
+      "name": "Neal Winfree",
+      "role": "receiver",
+      "team": 22,
+      "sent": 13,
+      "received": 1493,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1653,
+      "peak_hours": [
+        1,
+        11,
+        16
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "luis.mena@enron.com",
+      "name": "Luis Mena",
+      "role": "receiver",
+      "team": 22,
+      "sent": 58,
+      "received": 701,
+      "reply_rate": 0.69,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1109,
+      "peak_hours": [
+        8,
+        0,
+        6
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "michael.walters@enron.com",
+      "name": "Michael Walters",
+      "role": "receiver",
+      "team": 22,
+      "sent": 9,
+      "received": 632,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 388,
+      "peak_hours": [
+        7,
+        4
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "hector.campos@enron.com",
+      "name": "Hector Campos",
+      "role": "receiver",
+      "team": 22,
+      "sent": 39,
+      "received": 571,
+      "reply_rate": 0.205,
+      "urgent_rate": 0.0,
+      "avg_body_length": 784,
+      "peak_hours": [
+        8,
+        5,
+        1
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "mike.grigsby@enron.com",
+      "name": "Mike Grigsby",
+      "role": "lead",
+      "team": 23,
+      "sent": 1712,
+      "received": 3520,
+      "reply_rate": 0.332,
+      "urgent_rate": 0.0012,
+      "avg_body_length": 666,
+      "peak_hours": [
+        14,
+        15,
+        13
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "ina.rangel@enron.com",
+      "name": "Ina Rangel",
+      "role": "receiver",
+      "team": 23,
+      "sent": 404,
+      "received": 1637,
+      "reply_rate": 0.104,
+      "urgent_rate": 0.0074,
+      "avg_body_length": 859,
+      "peak_hours": [
+        15,
+        5,
+        6
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "tori.kuykendall@enron.com",
+      "name": "Tori Kuykendall",
+      "role": "connector",
+      "team": 23,
+      "sent": 810,
+      "received": 1596,
+      "reply_rate": 0.463,
+      "urgent_rate": 0.0,
+      "avg_body_length": 811,
+      "peak_hours": [
+        3,
+        2,
+        6
+      ],
+      "in_cluster_links": 10
+    },
+    {
+      "email": "monique.sanchez@enron.com",
+      "name": "Monique Sanchez",
+      "role": "receiver",
+      "team": 23,
+      "sent": 146,
+      "received": 1251,
+      "reply_rate": 0.349,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1221,
+      "peak_hours": [
+        13,
+        10,
+        12
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "keith.holst@enron.com",
+      "name": "Keith Holst",
+      "role": "receiver",
+      "team": 23,
+      "sent": 46,
+      "received": 3178,
+      "reply_rate": 0.565,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1451,
+      "peak_hours": [
+        15,
+        6,
+        8
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "jay.reitmeyer@enron.com",
+      "name": "Jay Reitmeyer",
+      "role": "receiver",
+      "team": 23,
+      "sent": 84,
+      "received": 2106,
+      "reply_rate": 0.405,
+      "urgent_rate": 0.0,
+      "avg_body_length": 811,
+      "peak_hours": [
+        9,
+        7,
+        12
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "m..tholt@enron.com",
+      "name": "M  Tholt",
+      "role": "receiver",
+      "team": 23,
+      "sent": 269,
+      "received": 1412,
+      "reply_rate": 0.595,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2204,
+      "peak_hours": [
+        8,
+        5,
+        11
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "l..gay@enron.com",
+      "name": "L  Gay",
+      "role": "receiver",
+      "team": 23,
+      "sent": 19,
+      "received": 1375,
+      "reply_rate": 0.211,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1333,
+      "peak_hours": [
+        14,
+        15,
+        12
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "matt.smith@enron.com",
+      "name": "Matt Smith",
+      "role": "connector",
+      "team": 23,
+      "sent": 1051,
+      "received": 1187,
+      "reply_rate": 0.588,
+      "urgent_rate": 0.0,
+      "avg_body_length": 655,
+      "peak_hours": [
+        5,
+        8,
+        4
+      ],
+      "in_cluster_links": 7
+    },
+    {
+      "email": "patti.sullivan@enron.com",
+      "name": "Patti Sullivan",
+      "role": "receiver",
+      "team": 23,
+      "sent": 29,
+      "received": 1371,
+      "reply_rate": 0.31,
+      "urgent_rate": 0.0,
+      "avg_body_length": 678,
+      "peak_hours": [
+        14,
+        7,
+        3
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "jason.wolfe@enron.com",
+      "name": "Jason Wolfe",
+      "role": "receiver",
+      "team": 23,
+      "sent": 109,
+      "received": 1570,
+      "reply_rate": 0.734,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1358,
+      "peak_hours": [
+        9,
+        12,
+        11
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "phillip.allen@enron.com",
+      "name": "Phillip Allen",
+      "role": "member",
+      "team": 23,
+      "sent": 2192,
+      "received": 2901,
+      "reply_rate": 0.364,
+      "urgent_rate": 0.0027,
+      "avg_body_length": 913,
+      "peak_hours": [
+        7,
+        6,
+        5
+      ],
+      "in_cluster_links": 8
+    },
+    {
+      "email": "victor.lamadrid@enron.com",
+      "name": "Victor Lamadrid",
+      "role": "lead",
+      "team": 24,
+      "sent": 601,
+      "received": 2196,
+      "reply_rate": 0.108,
+      "urgent_rate": 0.0,
+      "avg_body_length": 2102,
+      "peak_hours": [
+        9,
+        6,
+        8
+      ],
+      "in_cluster_links": 11
+    },
+    {
+      "email": "scott.neal@enron.com",
+      "name": "Scott Neal",
+      "role": "receiver",
+      "team": 24,
+      "sent": 1822,
+      "received": 3756,
+      "reply_rate": 0.437,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1249,
+      "peak_hours": [
+        8,
+        9,
+        10
+      ],
+      "in_cluster_links": 9
+    },
+    {
+      "email": "scott.goodell@enron.com",
+      "name": "Scott Goodell",
+      "role": "receiver",
+      "team": 24,
+      "sent": 136,
+      "received": 2335,
+      "reply_rate": 0.493,
+      "urgent_rate": 0.0,
+      "avg_body_length": 859,
+      "peak_hours": [
+        7,
+        8,
+        2
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "victoria.versen@enron.com",
+      "name": "Victoria Versen",
+      "role": "receiver",
+      "team": 24,
+      "sent": 29,
+      "received": 1632,
+      "reply_rate": 0.069,
+      "urgent_rate": 0.0,
+      "avg_body_length": 575,
+      "peak_hours": [
+        10,
+        8,
+        9
+      ],
+      "in_cluster_links": 10
+    },
+    {
+      "email": "w..pereira@enron.com",
+      "name": "W  Pereira",
+      "role": "receiver",
+      "team": 24,
+      "sent": 75,
+      "received": 1033,
+      "reply_rate": 0.613,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1452,
+      "peak_hours": [
+        8,
+        10,
+        9
+      ],
+      "in_cluster_links": 2
+    },
+    {
+      "email": "jonathan.mckay@enron.com",
+      "name": "Jonathan Mckay",
+      "role": "receiver",
+      "team": 24,
+      "sent": 325,
+      "received": 2050,
+      "reply_rate": 0.455,
+      "urgent_rate": 0.0,
+      "avg_body_length": 943,
+      "peak_hours": [
+        9,
+        7,
+        6
+      ],
+      "in_cluster_links": 5
+    },
+    {
+      "email": "craig.taylor@enron.com",
+      "name": "Craig Taylor",
+      "role": "receiver",
+      "team": 24,
+      "sent": 26,
+      "received": 1305,
+      "reply_rate": 0.038,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1045,
+      "peak_hours": [
+        7,
+        8,
+        6
+      ],
+      "in_cluster_links": 6
+    },
+    {
+      "email": "f..brawner@enron.com",
+      "name": "F  Brawner",
+      "role": "receiver",
+      "team": 24,
+      "sent": 79,
+      "received": 1540,
+      "reply_rate": 0.278,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1447,
+      "peak_hours": [
+        10,
+        9,
+        11
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "clarissa.garcia@enron.com",
+      "name": "Clarissa Garcia",
+      "role": "receiver",
+      "team": 24,
+      "sent": 20,
+      "received": 1055,
+      "reply_rate": 0.15,
+      "urgent_rate": 0.0,
+      "avg_body_length": 928,
+      "peak_hours": [
+        2,
+        6,
+        1
+      ],
+      "in_cluster_links": 4
+    },
+    {
+      "email": "frank.vickers@enron.com",
+      "name": "Frank Vickers",
+      "role": "receiver",
+      "team": 24,
+      "sent": 82,
+      "received": 1961,
+      "reply_rate": 0.244,
+      "urgent_rate": 0.0,
+      "avg_body_length": 801,
+      "peak_hours": [
+        14,
+        7,
+        9
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "f..keavey@enron.com",
+      "name": "F  Keavey",
+      "role": "receiver",
+      "team": 24,
+      "sent": 32,
+      "received": 1237,
+      "reply_rate": 0.375,
+      "urgent_rate": 0.0,
+      "avg_body_length": 1043,
+      "peak_hours": [
+        13,
+        6,
+        12
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "maureen.smith@enron.com",
+      "name": "Maureen Smith",
+      "role": "receiver",
+      "team": 24,
+      "sent": 13,
+      "received": 1276,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 3224,
+      "peak_hours": [
+        2,
+        0,
+        7
+      ],
+      "in_cluster_links": 3
+    },
+    {
+      "email": "alex.turner@enron.com",
+      "name": "Alex Turner",
+      "role": "member",
+      "team": 0,
+      "sent": 0,
+      "received": 37,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "morgan.blake@enron.com",
+      "name": "Morgan Blake",
+      "role": "member",
+      "team": 0,
+      "sent": 0,
+      "received": 33,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "casey.jordan@enron.com",
+      "name": "Casey Jordan",
+      "role": "member",
+      "team": 0,
+      "sent": 1,
+      "received": 49,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "riley.mitchell@enron.com",
+      "name": "Riley Mitchell",
+      "role": "member",
+      "team": 0,
+      "sent": 0,
+      "received": 46,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "jamie.crawford@enron.com",
+      "name": "Jamie Crawford",
+      "role": "member",
+      "team": 0,
+      "sent": 0,
+      "received": 46,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "taylor.ross@enron.com",
+      "name": "Taylor Ross",
+      "role": "member",
+      "team": 0,
+      "sent": 0,
+      "received": 48,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "quinn.foster@enron.com",
+      "name": "Quinn Foster",
+      "role": "member",
+      "team": 0,
+      "sent": 5,
+      "received": 48,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "avery.chen@enron.com",
+      "name": "Avery Chen",
+      "role": "member",
+      "team": 0,
+      "sent": 1,
+      "received": 44,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "drew.patterson@enron.com",
+      "name": "Drew Patterson",
+      "role": "member",
+      "team": 0,
+      "sent": 0,
+      "received": 22,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "jordan.kelly@enron.com",
+      "name": "Jordan Kelly",
+      "role": "member",
+      "team": 0,
+      "sent": 0,
+      "received": 50,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "sam.nguyen@enron.com",
+      "name": "Sam Nguyen",
+      "role": "member",
+      "team": 0,
+      "sent": 4,
+      "received": 40,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "pat.sullivan@enron.com",
+      "name": "Pat Sullivan",
+      "role": "member",
+      "team": 0,
+      "sent": 2,
+      "received": 22,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "robin.garcia@enron.com",
+      "name": "Robin Garcia",
+      "role": "member",
+      "team": 1,
+      "sent": 0,
+      "received": 33,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "lee.thompson@enron.com",
+      "name": "Lee Thompson",
+      "role": "member",
+      "team": 1,
+      "sent": 0,
+      "received": 44,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "chris.murphy@enron.com",
+      "name": "Chris Murphy",
+      "role": "member",
+      "team": 2,
+      "sent": 5,
+      "received": 45,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "devon.hart@enron.com",
+      "name": "Devon Hart",
+      "role": "member",
+      "team": 2,
+      "sent": 4,
+      "received": 10,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "cameron.price@enron.com",
+      "name": "Cameron Price",
+      "role": "member",
+      "team": 2,
+      "sent": 0,
+      "received": 29,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "dakota.wells@enron.com",
+      "name": "Dakota Wells",
+      "role": "member",
+      "team": 2,
+      "sent": 5,
+      "received": 17,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "reese.cooper@enron.com",
+      "name": "Reese Cooper",
+      "role": "member",
+      "team": 2,
+      "sent": 0,
+      "received": 21,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "skyler.ward@enron.com",
+      "name": "Skyler Ward",
+      "role": "member",
+      "team": 2,
+      "sent": 3,
+      "received": 17,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "finley.brooks@enron.com",
+      "name": "Finley Brooks",
+      "role": "member",
+      "team": 2,
+      "sent": 0,
+      "received": 18,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "emerson.cole@enron.com",
+      "name": "Emerson Cole",
+      "role": "member",
+      "team": 2,
+      "sent": 1,
+      "received": 39,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "hayden.reed@enron.com",
+      "name": "Hayden Reed",
+      "role": "member",
+      "team": 2,
+      "sent": 5,
+      "received": 24,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "parker.long@enron.com",
+      "name": "Parker Long",
+      "role": "member",
+      "team": 3,
+      "sent": 3,
+      "received": 44,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "rowan.gray@enron.com",
+      "name": "Rowan Gray",
+      "role": "member",
+      "team": 3,
+      "sent": 5,
+      "received": 33,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "sage.ellis@enron.com",
+      "name": "Sage Ellis",
+      "role": "member",
+      "team": 3,
+      "sent": 0,
+      "received": 13,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "blair.kim@enron.com",
+      "name": "Blair Kim",
+      "role": "member",
+      "team": 3,
+      "sent": 0,
+      "received": 17,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "kendall.fox@enron.com",
+      "name": "Kendall Fox",
+      "role": "member",
+      "team": 3,
+      "sent": 5,
+      "received": 11,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "phoenix.ray@enron.com",
+      "name": "Phoenix Ray",
+      "role": "member",
+      "team": 3,
+      "sent": 2,
+      "received": 47,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "river.stone@enron.com",
+      "name": "River Stone",
+      "role": "member",
+      "team": 3,
+      "sent": 0,
+      "received": 30,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "lane.cross@enron.com",
+      "name": "Lane Cross",
+      "role": "member",
+      "team": 3,
+      "sent": 4,
+      "received": 35,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "eden.vale@enron.com",
+      "name": "Eden Vale",
+      "role": "member",
+      "team": 3,
+      "sent": 5,
+      "received": 27,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "wren.marsh@enron.com",
+      "name": "Wren Marsh",
+      "role": "member",
+      "team": 3,
+      "sent": 0,
+      "received": 13,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "ash.palmer@enron.com",
+      "name": "Ash Palmer",
+      "role": "member",
+      "team": 4,
+      "sent": 0,
+      "received": 32,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "scout.day@enron.com",
+      "name": "Scout Day",
+      "role": "member",
+      "team": 4,
+      "sent": 5,
+      "received": 21,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "shay.north@enron.com",
+      "name": "Shay North",
+      "role": "member",
+      "team": 5,
+      "sent": 4,
+      "received": 34,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "bay.collins@enron.com",
+      "name": "Bay Collins",
+      "role": "member",
+      "team": 5,
+      "sent": 1,
+      "received": 15,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "zion.fields@enron.com",
+      "name": "Zion Fields",
+      "role": "member",
+      "team": 6,
+      "sent": 2,
+      "received": 19,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "lark.shore@enron.com",
+      "name": "Lark Shore",
+      "role": "member",
+      "team": 7,
+      "sent": 5,
+      "received": 28,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "cedar.west@enron.com",
+      "name": "Cedar West",
+      "role": "member",
+      "team": 7,
+      "sent": 2,
+      "received": 20,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "dale.frost@enron.com",
+      "name": "Dale Frost",
+      "role": "member",
+      "team": 7,
+      "sent": 0,
+      "received": 45,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "vale.snow@enron.com",
+      "name": "Vale Snow",
+      "role": "member",
+      "team": 8,
+      "sent": 4,
+      "received": 37,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "fern.bright@enron.com",
+      "name": "Fern Bright",
+      "role": "member",
+      "team": 8,
+      "sent": 0,
+      "received": 29,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "heath.bloom@enron.com",
+      "name": "Heath Bloom",
+      "role": "member",
+      "team": 8,
+      "sent": 2,
+      "received": 27,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "cliff.rivers@enron.com",
+      "name": "Cliff Rivers",
+      "role": "member",
+      "team": 9,
+      "sent": 0,
+      "received": 28,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "jade.holt@enron.com",
+      "name": "Jade Holt",
+      "role": "member",
+      "team": 9,
+      "sent": 3,
+      "received": 31,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "reed.banks@enron.com",
+      "name": "Reed Banks",
+      "role": "member",
+      "team": 9,
+      "sent": 4,
+      "received": 13,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "glen.thorn@enron.com",
+      "name": "Glen Thorn",
+      "role": "member",
+      "team": 9,
+      "sent": 2,
+      "received": 35,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "hazel.swift@enron.com",
+      "name": "Hazel Swift",
+      "role": "member",
+      "team": 9,
+      "sent": 0,
+      "received": 29,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "brook.lane@enron.com",
+      "name": "Brook Lane",
+      "role": "member",
+      "team": 9,
+      "sent": 0,
+      "received": 28,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "dale.oaks@enron.com",
+      "name": "Dale Oaks",
+      "role": "member",
+      "team": 9,
+      "sent": 5,
+      "received": 28,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "ivy.peak@enron.com",
+      "name": "Ivy Peak",
+      "role": "member",
+      "team": 9,
+      "sent": 0,
+      "received": 42,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "noel.flint@enron.com",
+      "name": "Noel Flint",
+      "role": "member",
+      "team": 10,
+      "sent": 0,
+      "received": 28,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "cass.winter@enron.com",
+      "name": "Cass Winter",
+      "role": "member",
+      "team": 10,
+      "sent": 0,
+      "received": 25,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "remy.voss@enron.com",
+      "name": "Remy Voss",
+      "role": "member",
+      "team": 11,
+      "sent": 0,
+      "received": 14,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "jules.stark@enron.com",
+      "name": "Jules Stark",
+      "role": "member",
+      "team": 12,
+      "sent": 0,
+      "received": 11,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "harley.dean@enron.com",
+      "name": "Harley Dean",
+      "role": "member",
+      "team": 12,
+      "sent": 5,
+      "received": 50,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "blake.reyes@enron.com",
+      "name": "Blake Reyes",
+      "role": "member",
+      "team": 13,
+      "sent": 0,
+      "received": 41,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "kai.lund@enron.com",
+      "name": "Kai Lund",
+      "role": "member",
+      "team": 13,
+      "sent": 0,
+      "received": 29,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "milan.chase@enron.com",
+      "name": "Milan Chase",
+      "role": "member",
+      "team": 13,
+      "sent": 0,
+      "received": 47,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "arden.wolfe@enron.com",
+      "name": "Arden Wolfe",
+      "role": "member",
+      "team": 13,
+      "sent": 4,
+      "received": 27,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "ellis.cruz@enron.com",
+      "name": "Ellis Cruz",
+      "role": "member",
+      "team": 13,
+      "sent": 0,
+      "received": 46,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "tate.moon@enron.com",
+      "name": "Tate Moon",
+      "role": "member",
+      "team": 13,
+      "sent": 0,
+      "received": 38,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "sloan.beck@enron.com",
+      "name": "Sloan Beck",
+      "role": "member",
+      "team": 13,
+      "sent": 0,
+      "received": 24,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "penn.rush@enron.com",
+      "name": "Penn Rush",
+      "role": "member",
+      "team": 13,
+      "sent": 1,
+      "received": 46,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "teagan.lowe@enron.com",
+      "name": "Teagan Lowe",
+      "role": "member",
+      "team": 13,
+      "sent": 1,
+      "received": 21,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "corin.vail@enron.com",
+      "name": "Corin Vail",
+      "role": "member",
+      "team": 13,
+      "sent": 5,
+      "received": 50,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "darcy.haze@enron.com",
+      "name": "Darcy Haze",
+      "role": "member",
+      "team": 13,
+      "sent": 0,
+      "received": 19,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "briar.kent@enron.com",
+      "name": "Briar Kent",
+      "role": "member",
+      "team": 13,
+      "sent": 4,
+      "received": 26,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "ashton.key@enron.com",
+      "name": "Ashton Key",
+      "role": "member",
+      "team": 13,
+      "sent": 0,
+      "received": 24,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "kit.crane@enron.com",
+      "name": "Kit Crane",
+      "role": "member",
+      "team": 14,
+      "sent": 1,
+      "received": 12,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "noel.birch@enron.com",
+      "name": "Noel Birch",
+      "role": "member",
+      "team": 14,
+      "sent": 1,
+      "received": 29,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "haven.lake@enron.com",
+      "name": "Haven Lake",
+      "role": "member",
+      "team": 15,
+      "sent": 4,
+      "received": 49,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "marin.clay@enron.com",
+      "name": "Marin Clay",
+      "role": "member",
+      "team": 15,
+      "sent": 0,
+      "received": 25,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "wynn.shaw@enron.com",
+      "name": "Wynn Shaw",
+      "role": "member",
+      "team": 15,
+      "sent": 0,
+      "received": 23,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "hollis.true@enron.com",
+      "name": "Hollis True",
+      "role": "member",
+      "team": 16,
+      "sent": 0,
+      "received": 24,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "storm.hart@enron.com",
+      "name": "Storm Hart",
+      "role": "member",
+      "team": 16,
+      "sent": 4,
+      "received": 43,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "ember.cole@enron.com",
+      "name": "Ember Cole",
+      "role": "member",
+      "team": 17,
+      "sent": 1,
+      "received": 37,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "linden.bray@enron.com",
+      "name": "Linden Bray",
+      "role": "member",
+      "team": 17,
+      "sent": 0,
+      "received": 44,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "onyx.vale@enron.com",
+      "name": "Onyx Vale",
+      "role": "member",
+      "team": 18,
+      "sent": 4,
+      "received": 28,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "quill.marsh@enron.com",
+      "name": "Quill Marsh",
+      "role": "member",
+      "team": 18,
+      "sent": 0,
+      "received": 40,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "rain.park@enron.com",
+      "name": "Rain Park",
+      "role": "member",
+      "team": 18,
+      "sent": 0,
+      "received": 33,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "sable.knox@enron.com",
+      "name": "Sable Knox",
+      "role": "member",
+      "team": 19,
+      "sent": 0,
+      "received": 11,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "tobin.sage@enron.com",
+      "name": "Tobin Sage",
+      "role": "member",
+      "team": 19,
+      "sent": 0,
+      "received": 25,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "vesper.lark@enron.com",
+      "name": "Vesper Lark",
+      "role": "member",
+      "team": 19,
+      "sent": 1,
+      "received": 11,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "zephyr.dawn@enron.com",
+      "name": "Zephyr Dawn",
+      "role": "member",
+      "team": 19,
+      "sent": 2,
+      "received": 44,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "cove.helm@enron.com",
+      "name": "Cove Helm",
+      "role": "member",
+      "team": 19,
+      "sent": 3,
+      "received": 43,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "flint.cross@enron.com",
+      "name": "Flint Cross",
+      "role": "member",
+      "team": 19,
+      "sent": 5,
+      "received": 25,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "lyric.penn@enron.com",
+      "name": "Lyric Penn",
+      "role": "member",
+      "team": 19,
+      "sent": 2,
+      "received": 39,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "harbor.west@enron.com",
+      "name": "Harbor West",
+      "role": "member",
+      "team": 19,
+      "sent": 4,
+      "received": 37,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "summit.rose@enron.com",
+      "name": "Summit Rose",
+      "role": "member",
+      "team": 19,
+      "sent": 1,
+      "received": 28,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "prairie.bloom@enron.com",
+      "name": "Prairie Bloom",
+      "role": "member",
+      "team": 19,
+      "sent": 1,
+      "received": 21,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "canyon.ford@enron.com",
+      "name": "Canyon Ford",
+      "role": "member",
+      "team": 19,
+      "sent": 3,
+      "received": 12,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "coral.ash@enron.com",
+      "name": "Coral Ash",
+      "role": "member",
+      "team": 20,
+      "sent": 0,
+      "received": 29,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "drift.pine@enron.com",
+      "name": "Drift Pine",
+      "role": "member",
+      "team": 20,
+      "sent": 5,
+      "received": 21,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "echo.hill@enron.com",
+      "name": "Echo Hill",
+      "role": "member",
+      "team": 20,
+      "sent": 0,
+      "received": 16,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "frost.lake@enron.com",
+      "name": "Frost Lake",
+      "role": "member",
+      "team": 21,
+      "sent": 1,
+      "received": 29,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "grove.bay@enron.com",
+      "name": "Grove Bay",
+      "role": "member",
+      "team": 21,
+      "sent": 3,
+      "received": 35,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "isle.stone@enron.com",
+      "name": "Isle Stone",
+      "role": "member",
+      "team": 22,
+      "sent": 5,
+      "received": 31,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    },
+    {
+      "email": "jet.creek@enron.com",
+      "name": "Jet Creek",
+      "role": "member",
+      "team": 23,
+      "sent": 0,
+      "received": 13,
+      "reply_rate": 0.0,
+      "urgent_rate": 0.0,
+      "avg_body_length": 0,
+      "peak_hours": [
+        9
+      ],
+      "in_cluster_links": 0
+    }
+  ]
+}

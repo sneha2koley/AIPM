@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+{% set active_page = "rollout" %}
+{% block title %}Rollout{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h2>Feature Rollout</h2>
+    <p>Phase 3: Staged rollout controls — 10% &rarr; 50% &rarr; 100%</p>
+</div>
+
+<div class="metrics-grid">
+    <div class="metric-card">
+        <div class="label">Rollout Phase</div>
+        <div class="value" id="r-phase">—</div>
+    </div>
+    <div class="metric-card">
+        <div class="label">Features Enabled</div>
+        <div class="value" id="r-enabled">—</div>
+    </div>
+    <div class="metric-card">
+        <div class="label">Avg Rollout %</div>
+        <div class="value" id="r-avg">—</div>
+    </div>
+    <div class="metric-card">
+        <div class="label">Re-engagement</div>
+        <div class="value" id="r-campaign">Ready</div>
+    </div>
+</div>
+
+<div id="rolloutControls"></div>
+
+<div class="card" style="margin-top: 24px;">
+    <div class="card-header"><h3>Rollout Plan (from PM Pipeline)</h3></div>
+    <div class="card-body" style="font-size: 13px; color: var(--text-secondary); line-height: 1.8;">
+        <strong style="color: var(--text-primary)">Week 10:</strong> 10% of teams — monitor for bugs/performance<br>
+        <strong style="color: var(--text-primary)">Week 11:</strong> 50% of teams — validate engagement lift<br>
+        <strong style="color: var(--text-primary)">Week 12:</strong> 100% of teams — full rollout + in-app announcement<br><br>
+        <strong style="color: var(--text-primary)">Re-engagement campaign:</strong> One-time email to users who disabled notifications, explaining the new tiered system with a CTA to re-enable.
+    </div>
+</div>
+
+<div class="card" style="margin-top: 20px;">
+    <div class="card-header"><h3>Simulated Re-engagement Campaign</h3></div>
+    <div class="card-body">
+        <div style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px; max-width: 500px;">
+            <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Email Preview</div>
+            <div style="font-size: 16px; font-weight: 600; margin-bottom: 4px;">Notifications just got smarter</div>
+            <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 16px;">
+                We've redesigned how TaskFlow notifications work. No more noise — only what matters.
+                Critical updates reach you instantly. Everything else is batched into a clean digest.
+            </div>
+            <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 16px;">
+                <strong>What's new:</strong><br>
+                &bull; 3-tier priority system (Critical / Standard / Low)<br>
+                &bull; Batched digests for non-urgent updates<br>
+                &bull; Per-user notification preferences
+            </div>
+            <button class="btn btn-primary" onclick="simulateCampaign()">Re-enable Notifications</button>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 12px;">
+                <a href="#" style="color: var(--text-muted);">Unsubscribe</a> &bull; TaskFlow Inc.
+            </div>
+        </div>
+        <div id="campaignResult" style="margin-top: 12px;"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const FLAG_LABELS = {
+    smart_notifications: {name: 'Smart Notifications', desc: 'Rule-based 3-tier notification priority engine'},
+    team_pulse_dashboard: {name: 'Team Pulse Dashboard', desc: 'Real-time team visibility page'},
+    notification_digest: {name: 'Notification Digest', desc: 'Batched 4-hour digest for Standard-tier notifications'},
+};
+
+async function loadRollout() {
+    const flags = await fetch('/api/rollout').then(r => r.json());
+    const container = document.getElementById('rolloutControls');
+    container.innerHTML = '';
+
+    let enabledCount = 0;
+    let totalPct = 0;
+
+    flags.forEach(flag => {
+        const meta = FLAG_LABELS[flag.flag_name] || {name: flag.flag_name, desc: ''};
+        if (flag.enabled) enabledCount++;
+        totalPct += flag.rollout_percentage;
+
+        const card = document.createElement('div');
+        card.className = 'rollout-card';
+        card.innerHTML = `
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4>${meta.name}</h4>
+                    <div style="font-size: 13px; color: var(--text-secondary);">${meta.desc}</div>
+                </div>
+                <label class="toggle">
+                    <input type="checkbox" ${flag.enabled ? 'checked' : ''} onchange="updateFlag('${flag.flag_name}', this)">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+            <div class="rollout-slider">
+                <input type="range" min="0" max="100" step="10" value="${flag.rollout_percentage}"
+                       id="slider-${flag.flag_name}"
+                       oninput="document.getElementById('pct-${flag.flag_name}').textContent = this.value + '%'"
+                       onchange="updateFlag('${flag.flag_name}')">
+                <div class="rollout-pct" id="pct-${flag.flag_name}">${flag.rollout_percentage}%</div>
+                <button class="btn btn-primary btn-sm" onclick="updateFlag('${flag.flag_name}')">Apply</button>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+
+    document.getElementById('r-enabled').textContent = enabledCount + '/' + flags.length;
+    document.getElementById('r-avg').textContent = Math.round(totalPct / Math.max(flags.length, 1)) + '%';
+
+    if (totalPct === 0) document.getElementById('r-phase').textContent = 'Pre-launch';
+    else if (totalPct / flags.length <= 15) document.getElementById('r-phase').textContent = 'Week 10';
+    else if (totalPct / flags.length <= 55) document.getElementById('r-phase').textContent = 'Week 11';
+    else document.getElementById('r-phase').textContent = 'Week 12';
+}
+
+async function updateFlag(flagName, toggle) {
+    const slider = document.getElementById('slider-' + flagName);
+    const percentage = parseInt(slider.value);
+    const enabled = toggle ? toggle.checked : document.querySelector(`#rolloutControls input[type="checkbox"][onchange*="${flagName}"]`).checked;
+
+    await fetch(`/api/rollout/${flagName}`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({percentage, enabled}),
+    });
+    loadRollout();
+}
+
+function simulateCampaign() {
+    document.getElementById('campaignResult').innerHTML = `
+        <div class="badge badge-success" style="margin-right: 8px;">Campaign Sent</div>
+        <span style="font-size: 13px; color: var(--text-secondary);">
+            Simulated: 2,400 emails queued &bull; Est. 18% re-enable rate &bull; 432 users projected to return
+        </span>
+    `;
+    document.getElementById('r-campaign').textContent = 'Sent';
+}
+
+loadRollout();
+</script>
+{% endblock %}

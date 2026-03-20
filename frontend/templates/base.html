@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow — {% block title %}Dashboard{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <h1>TaskFlow</h1>
+                <span>PM Decision Pipeline</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="/" class="{% if active_page == 'home' %}active{% endif %}">
+                    <span class="icon">&#9632;</span> Overview
+                </a>
+                <a href="/notifications" class="{% if active_page == 'notifications' %}active{% endif %}">
+                    <span class="icon">&#9881;</span> Notifications
+                </a>
+                <a href="/pulse" class="{% if active_page == 'pulse' %}active{% endif %}">
+                    <span class="icon">&#9829;</span> Team Pulse
+                </a>
+                <a href="/analytics-dashboard" class="{% if active_page == 'analytics' %}active{% endif %}">
+                    <span class="icon">&#9733;</span> Analytics
+                </a>
+                <a href="/rollout" class="{% if active_page == 'rollout' %}active{% endif %}">
+                    <span class="icon">&#9881;</span> Rollout
+                </a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

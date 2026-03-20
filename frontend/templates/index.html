@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% set active_page = "home" %}
+{% block title %}Overview{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h2>TaskFlow — PM Decision Pipeline</h2>
+    <p>Smart Notifications + Team Pulse Dashboard — built on Enron Email Dataset</p>
+</div>
+
+<div class="metrics-grid" id="overviewMetrics">
+    <div class="metric-card">
+        <div class="label">Total Notifications</div>
+        <div class="value" id="m-total">—</div>
+    </div>
+    <div class="metric-card">
+        <div class="label">Click-Through Rate</div>
+        <div class="value" id="m-ctr">—</div>
+        <div class="change negative" id="m-ctr-note">vs 15% industry avg</div>
+    </div>
+    <div class="metric-card">
+        <div class="label">Read Rate</div>
+        <div class="value" id="m-read">—</div>
+    </div>
+    <div class="metric-card">
+        <div class="label">Teams Tracked</div>
+        <div class="value" id="m-teams">—</div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h3>Phase 0 Validation — Churn Cohort Analysis</h3>
+        <span class="badge badge-success" id="gate-badge">—</span>
+    </div>
+    <div class="card-body">
+        <div class="bar-chart" id="cohortChart"></div>
+    </div>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    <div class="card">
+        <div class="card-header"><h3>Notifications by Priority</h3></div>
+        <div class="card-body">
+            <div class="bar-chart" id="priorityChart"></div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header"><h3>Volume vs Engagement</h3></div>
+        <div class="card-body">
+            <div class="bar-chart" id="volumeChart"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function loadOverview() {
+    const [phase0, analytics, teams] = await Promise.all([
+        fetch('/api/phase0').then(r => r.json()),
+        fetch('/api/analytics/notifications').then(r => r.json()),
+        fetch('/api/analytics/teams').then(r => r.json()),
+    ]);
+
+    document.getElementById('m-total').textContent = analytics.overall.total.toLocaleString();
+    document.getElementById('m-ctr').textContent = analytics.overall.ctr + '%';
+    document.getElementById('m-read').textContent = analytics.overall.read_rate + '%';
+    document.getElementById('m-teams').textContent = teams.total_teams;
+
+    const gate = phase0.decision_gate;
+    const badge = document.getElementById('gate-badge');
+    badge.textContent = gate.result;
+    badge.className = gate.result === 'PASS' ? 'badge badge-success' : 'badge badge-standard';
+
+    const cohort = phase0.team_cohorts;
+    document.getElementById('cohortChart').innerHTML = `
+        <div class="bar-row">
+            <div class="bar-label">Retained</div>
+            <div class="bar-track"><div class="bar-fill" style="width: ${cohort.retained.avg_activation}%; background: var(--success)"></div></div>
+            <div class="bar-value">${cohort.retained.avg_activation}% active</div>
+        </div>
+        <div class="bar-row">
+            <div class="bar-label">Churned</div>
+            <div class="bar-track"><div class="bar-fill" style="width: ${cohort.churned.avg_activation}%; background: var(--danger)"></div></div>
+            <div class="bar-value">${cohort.churned.avg_activation}% active</div>
+        </div>
+        <div class="bar-row">
+            <div class="bar-label">Churn Rate</div>
+            <div class="bar-track"><div class="bar-fill" style="width: ${cohort.churn_rate_pct}%; background: var(--warning)"></div></div>
+            <div class="bar-value">${cohort.churn_rate_pct}%</div>
+        </div>
+        <div class="bar-row">
+            <div class="bar-label">Retained CTR</div>
+            <div class="bar-track"><div class="bar-fill" style="width: ${Math.min(cohort.retained.avg_ctr * 5, 100)}%; background: var(--accent)"></div></div>
+            <div class="bar-value">${cohort.retained.avg_ctr}%</div>
+        </div>
+        <div class="bar-row">
+            <div class="bar-label">Churned CTR</div>
+            <div class="bar-track"><div class="bar-fill" style="width: ${Math.min(cohort.churned.avg_ctr * 5, 100)}%; background: var(--critical)"></div></div>
+            <div class="bar-value">${cohort.churned.avg_ctr}%</div>
+        </div>
+    `;
+
+    const priorityColors = {critical: 'var(--critical)', standard: 'var(--standard)', low: 'var(--low)'};
+    const maxPri = Math.max(...analytics.by_priority.map(p => p.total));
+    document.getElementById('priorityChart').innerHTML = analytics.by_priority.map(p => `
+        <div class="bar-row">
+            <div class="bar-label">${p.priority}</div>
+            <div class="bar-track"><div class="bar-fill" style="width: ${p.total/maxPri*100}%; background: ${priorityColors[p.priority]}"></div></div>
+            <div class="bar-value">${p.total.toLocaleString()}</div>
+        </div>
+    `).join('');
+
+    const volLabels = {high_100plus: 'High (100+)', medium_30_99: 'Med (30-99)', low_under_30: 'Low (<30)'};
+    document.getElementById('volumeChart').innerHTML = analytics.volume_distribution.map(v => `
+        <div class="bar-row">
+            <div class="bar-label">${volLabels[v.bucket] || v.bucket}</div>
+            <div class="bar-track"><div class="bar-fill" style="width: ${Math.min(v.avg_ctr * 10, 100)}%; background: var(--accent)"></div></div>
+            <div class="bar-value">${v.avg_ctr}% CTR</div>
+        </div>
+    `).join('');
+}
+
+loadOverview();
+</script>
+{% endblock %}

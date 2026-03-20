@@ -1,0 +1,225 @@
+{% extends "base.html" %}
+{% set active_page = "pulse" %}
+{% block title %}Team Pulse{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h2>Team Pulse</h2>
+    <p>Real-time team visibility — who's working on what, tasks at risk, weekly activity</p>
+</div>
+
+<div id="teamListView">
+    <div class="metrics-grid" id="pulseMetrics">
+        <div class="metric-card">
+            <div class="label">Total Teams</div>
+            <div class="value" id="pm-total">—</div>
+        </div>
+        <div class="metric-card">
+            <div class="label">Avg Health Score</div>
+            <div class="value" id="pm-health">—</div>
+        </div>
+        <div class="metric-card">
+            <div class="label">High Risk Teams</div>
+            <div class="value" id="pm-risk">—</div>
+            <div class="change negative">churn risk</div>
+        </div>
+        <div class="metric-card">
+            <div class="label">Active Members</div>
+            <div class="value" id="pm-active">—</div>
+        </div>
+    </div>
+    <div class="team-grid" id="teamGrid">
+        <div class="loading"><span class="spinner"></span> Loading teams...</div>
+    </div>
+</div>
+
+<div id="teamDetailView" class="pulse-detail">
+    <button class="back-btn" onclick="showTeamList()">&larr; Back to all teams</button>
+    <div id="teamDetailContent"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const AVATAR_COLORS = ['#6366f1','#ec4899','#14b8a6','#f59e0b','#ef4444','#8b5cf6','#06b6d4','#84cc16','#f97316','#6366f1'];
+
+function getHealthColor(score) {
+    if (score >= 60) return 'var(--success)';
+    if (score >= 35) return 'var(--warning)';
+    return 'var(--danger)';
+}
+
+async function loadTeams() {
+    const data = await fetch('/api/teams?per_page=50').then(r => r.json());
+    const analytics = await fetch('/api/analytics/teams').then(r => r.json());
+
+    document.getElementById('pm-total').textContent = analytics.total_teams;
+    document.getElementById('pm-risk').textContent = analytics.churn_distribution.high;
+
+    let totalActive = 0;
+    const grid = document.getElementById('teamGrid');
+    grid.innerHTML = '';
+
+    for (const team of data.teams) {
+        const aTeam = analytics.teams.find(t => t.id === team.id);
+        const activation = aTeam ? aTeam.activation_rate : 0;
+        const ctr = aTeam ? aTeam.ctr : 0;
+        const healthEst = Math.round(activation * 0.5 + Math.min(ctr / 15 * 50, 50));
+        totalActive += team.active_tasks || 0;
+
+        const card = document.createElement('div');
+        card.className = 'team-card';
+        card.onclick = () => showTeamDetail(team.id);
+        card.innerHTML = `
+            <div class="team-name">${team.name}</div>
+            <div class="team-stats">
+                <div class="stat"><strong>${team.member_count}</strong> Members</div>
+                <div class="stat"><strong>${team.active_tasks || 0}</strong> Active Tasks</div>
+                <div class="stat"><strong>${team.blocked_tasks || 0}</strong> Blocked</div>
+            </div>
+            <div class="health-bar">
+                <div class="health-bar-fill" style="width: ${healthEst}%; background: ${getHealthColor(healthEst)}"></div>
+            </div>
+        `;
+        grid.appendChild(card);
+    }
+
+    document.getElementById('pm-active').textContent = totalActive;
+
+    const avgHealth = analytics.teams.length > 0
+        ? Math.round(analytics.teams.reduce((s, t) => s + t.activation_rate, 0) / analytics.teams.length)
+        : 0;
+    document.getElementById('pm-health').textContent = avgHealth + '%';
+}
+
+async function showTeamDetail(teamId) {
+    document.getElementById('teamListView').style.display = 'none';
+    document.getElementById('teamDetailView').classList.add('active');
+
+    const content = document.getElementById('teamDetailContent');
+    content.innerHTML = '<div class="loading"><span class="spinner"></span> Loading team pulse...</div>';
+
+    const pulse = await fetch(`/api/teams/${teamId}/pulse`).then(r => r.json());
+
+    const healthColor = getHealthColor(pulse.health.health_score);
+    const ts = pulse.summary.tasks;
+    const ns = pulse.summary.notifications;
+
+    content.innerHTML = `
+        <div class="page-header">
+            <h2>${pulse.team.name}</h2>
+            <p>${pulse.health.member_count} members | Health: ${pulse.health.health_score}/100 | Activation: ${pulse.health.activation_rate}%</p>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="label">Health Score</div>
+                <div class="value" style="color: ${healthColor}">${pulse.health.health_score}</div>
+                <div class="health-bar" style="margin-top:8px"><div class="health-bar-fill" style="width:${pulse.health.health_score}%; background:${healthColor}"></div></div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Active Members</div>
+                <div class="value">${pulse.health.active_members}/${pulse.health.member_count}</div>
+                <div class="change ${pulse.health.activation_rate >= 60 ? 'positive' : 'negative'}">${pulse.health.activation_rate}% activation</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Tasks In Progress</div>
+                <div class="value">${ts.in_progress || 0}</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Notification CTR</div>
+                <div class="value">${ns.ctr || 0}%</div>
+                <div class="change ${(ns.ctr || 0) >= 10 ? 'positive' : 'negative'}">target: 15%</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><h3>Right Now — Team Members</h3></div>
+            <div class="card-body">
+                <div class="member-grid">
+                    ${pulse.members.map((m, i) => `
+                        <div class="member-card">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <div class="avatar" style="background: ${AVATAR_COLORS[i % AVATAR_COLORS.length]}">${(m.display_name || '?').charAt(0)}</div>
+                                <div>
+                                    <div class="member-name">${escHtml(m.display_name || m.email)}</div>
+                                    <div class="member-role">${m.role}${m.active_tasks ? ` · ${m.active_tasks} task${m.active_tasks > 1 ? 's' : ''}` : ''}</div>
+                                </div>
+                            </div>
+                            <div class="member-task">${m.current_task ? escHtml(m.current_task) : '<span style="color:var(--text-muted)">No active task</span>'}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><h3>At Risk — Blocked & Critical Tasks</h3></div>
+            <div class="card-body">
+                ${pulse.at_risk.length === 0
+                    ? '<div class="empty-state"><p>No at-risk tasks</p></div>'
+                    : `<div class="risk-list">${pulse.at_risk.map(t => `
+                        <div class="risk-item">
+                            <div>
+                                <div class="risk-title">${escHtml(t.title)}</div>
+                                <div class="risk-assignee">${escHtml(t.assignee_name || 'Unassigned')}</div>
+                            </div>
+                            <div style="display:flex; gap:6px;">
+                                <span class="badge badge-${t.status === 'blocked' ? 'critical' : 'standard'}">${t.status}</span>
+                                <span class="badge badge-${t.priority === 'critical' ? 'critical' : (t.priority === 'high' ? 'standard' : 'low')}">${t.priority}</span>
+                            </div>
+                        </div>
+                    `).join('')}</div>`
+                }
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><h3>This Week — Summary</h3></div>
+            <div class="card-body">
+                <div class="bar-chart">
+                    <div class="bar-row">
+                        <div class="bar-label">Completed</div>
+                        <div class="bar-track"><div class="bar-fill" style="width: ${ts.total_tasks ? (ts.completed||0)/ts.total_tasks*100 : 0}%; background: var(--success)"></div></div>
+                        <div class="bar-value">${ts.completed || 0}</div>
+                    </div>
+                    <div class="bar-row">
+                        <div class="bar-label">In Progress</div>
+                        <div class="bar-track"><div class="bar-fill" style="width: ${ts.total_tasks ? (ts.in_progress||0)/ts.total_tasks*100 : 0}%; background: var(--accent)"></div></div>
+                        <div class="bar-value">${ts.in_progress || 0}</div>
+                    </div>
+                    <div class="bar-row">
+                        <div class="bar-label">Blocked</div>
+                        <div class="bar-track"><div class="bar-fill" style="width: ${ts.total_tasks ? (ts.blocked||0)/ts.total_tasks*100 : 0}%; background: var(--danger)"></div></div>
+                        <div class="bar-value">${ts.blocked || 0}</div>
+                    </div>
+                    <div class="bar-row">
+                        <div class="bar-label">Read Rate</div>
+                        <div class="bar-track"><div class="bar-fill" style="width: ${ns.read_rate || 0}%; background: var(--standard)"></div></div>
+                        <div class="bar-value">${ns.read_rate || 0}%</div>
+                    </div>
+                    <div class="bar-row">
+                        <div class="bar-label">Critical Notifs</div>
+                        <div class="bar-track"><div class="bar-fill" style="width: ${ns.total_notifications ? (ns.critical_count||0)/ns.total_notifications*100 : 0}%; background: var(--critical)"></div></div>
+                        <div class="bar-value">${ns.critical_count || 0}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function showTeamList() {
+    document.getElementById('teamListView').style.display = 'block';
+    document.getElementById('teamDetailView').classList.remove('active');
+}
+
+function escHtml(s) {
+    const d = document.createElement('div');
+    d.textContent = s || '';
+    return d.innerHTML;
+}
+
+loadTeams();
+</script>
+{% endblock %}
