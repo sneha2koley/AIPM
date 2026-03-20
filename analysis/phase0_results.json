@@ -1,0 +1,78 @@
+{
+  "overall": {
+    "total_notifications": 35780,
+    "unique_recipients": 400,
+    "read_rate_pct": 34.8,
+    "ctr_pct": 6.4
+  },
+  "volume_vs_engagement": {
+    "high_volume": {
+      "users": 97,
+      "avg_read_rate": 39.4,
+      "avg_ctr": 7.2
+    },
+    "medium_volume": {
+      "users": 262,
+      "avg_read_rate": 30.2,
+      "avg_ctr": 5.5
+    },
+    "low_volume": {
+      "users": 24,
+      "avg_read_rate": 32.5,
+      "avg_ctr": 4.5
+    }
+  },
+  "priority_distribution": [
+    {
+      "priority": "critical",
+      "count": 7778,
+      "pct": 21.7,
+      "read_rate": 46.5,
+      "ctr": 9.9
+    },
+    {
+      "priority": "low",
+      "count": 2416,
+      "pct": 6.8,
+      "read_rate": 18.4,
+      "ctr": 2.9
+    },
+    {
+      "priority": "standard",
+      "count": 25586,
+      "pct": 71.5,
+      "read_rate": 32.8,
+      "ctr": 5.6
+    }
+  ],
+  "team_cohorts": {
+    "total_teams": 25,
+    "churned": {
+      "count": 1,
+      "avg_read_rate": 38.5,
+      "avg_ctr": 3.8,
+      "avg_activation": 21.4
+    },
+    "retained": {
+      "count": 24,
+      "avg_read_rate": 35.8,
+      "avg_ctr": 6.6,
+      "avg_activation": 88.7
+    },
+    "churn_rate_pct": 4.0
+  },
+  "thread_analysis": {
+    "deep_threads": {
+      "count": 283,
+      "avg_ctr": 6.9
+    },
+    "shallow_threads": {
+      "count": 717,
+      "avg_ctr": 7.7
+    }
+  },
+  "decision_gate": {
+    "result": "PASS_WITH_CAUTION",
+    "recommendation": "Proceed with Smart Notifications + Team Pulse Dashboard"
+  }
+}
